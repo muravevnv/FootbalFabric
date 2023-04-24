@@ -1,0 +1,32 @@
+.footer {
+  padding: 60px 0 24px;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  &__company {
+    font-size: 18px;
+    line-height: 1.25;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-right: 6px;
+  }
+
+  &-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__item {
+      text-transform: uppercase;
+    }
+  }
+}

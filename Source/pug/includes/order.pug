@@ -1,0 +1,26 @@
+section.order
+    .container
+        .order__img
+            img(src="images/order__img.png" alt="Интерьер")
+        .order-desc
+            h2.order__title Хотите заказать проект?
+            .order__subtitle Оставьте заявку, и мы вам перезвоним
+            form(action="#").order-form
+                .form-item
+                    input(type="text" placeholder="" id="name" required).form__input
+                    label(for="name").form__label Имя
+                    span.form__error Поле не заполнено
+                .form-item
+                    input(type="text" placeholder="" id="email" required).form__input
+                    label(for="email").form__label E-mail
+                    span.form__error Поле не заполнено
+                .form-item
+                    input(type="text" placeholder="" id="phone" required).form__input
+                    label(for="phone").form__label Телефон
+                    span.form__error Поле не заполнено
+                button.form__btn.btn Отправить заявку
+            .order-app
+                a(href="#").order-app__item
+                    img(src="images/appstore.svg" alt="AppStore")
+                a(href="#").order-app__item
+                    img(src="images/playmarket.svg" alt="Playmarket")

@@ -1,0 +1,28 @@
+.reviews {
+  padding: 60px 0;
+
+  &-list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 40px 60px;
+    border: 1px solid var(--color-dark);
+
+    &__name {
+      font-size: 18px;
+      line-height: 1.25;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    &__icon {
+      margin-bottom: 32px;
+    }
+  }
+}

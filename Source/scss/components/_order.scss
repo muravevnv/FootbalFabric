@@ -1,0 +1,33 @@
+.order {
+  padding: 60px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__img {
+    max-width: 562px;
+    width: 100%;
+  }
+
+  &-desc {
+    max-width: 678px;
+    width: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 72px;
+  }
+
+  &-form {
+    margin-bottom: 40px;
+  }
+
+  &-app {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}

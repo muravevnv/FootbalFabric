@@ -1,0 +1,30 @@
+:root {
+  // Global
+  --font-family: 'Helvetica', sans-serif;
+  --font-size: 16px;
+  --line-height: 1.5;
+  --border-radius: 8px;
+  --transition: 0.4s ease-in-out;
+
+
+  // Colors
+  --color-black: #000;
+  --color-white: #fff;
+  --color-bg: #F0EDE9;
+  --color-light: #F9F5F0;
+  --color-dark: #303030;
+  --color-primary: #DDD7C0;
+  --color-secondary: #CBC6B2;
+  --color-disabled: rgba(33, 37, 41, 0.5);
+  --color-neutral: #D9D9D9;
+  --color-gray: #505862;
+  --color-border: #C0C0B9;
+  --color-error: #ef4444;
+
+
+  // Z-index
+  --z-index-header: 100;
+  --z-index-menu: 200;
+  --z-index-dropdown: 300;
+  --z-index-modal: 1000;
+}

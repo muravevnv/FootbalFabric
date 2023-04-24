@@ -1,0 +1,29 @@
+.header {
+  padding: 24px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+
+  }
+
+  &-nav {
+
+    &__list {
+      display: flex;
+      align-items: center;
+    }
+
+    &__item {
+      margin-right: 32px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
