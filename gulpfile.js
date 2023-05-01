@@ -74,11 +74,18 @@ gulp.task("svgSprite", function () {
         .src(property.source.svg + "/*.svg")
         .pipe(
             svgSprite({
-                mode: {
-                    stack: {
-                        sprite: "../sprite.svg",
-                    },
-                },
+                // mode: {
+                //     stack: {
+                //         sprite: "../sprite.svg",
+                //     },
+								// 		symbol: true 
+                // },
+								mode: {
+									symbol: {
+										inline: true,
+										sprite: '../sprite.svg'
+									} // Activate the «symbol» mode
+								}
             })
         )
         .pipe(gulp.dest(property.result.svg));

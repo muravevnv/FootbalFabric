@@ -8,13 +8,44 @@
 @import 'config/typography';
 @import 'config/form';
 
+//Elements
+
+@import 'elements/btn';
+@import 'elements/tags';
+@import 'elements/checkbox';
+@import 'elements/socials-item';
+
+//Sections
+
+@import 'sections/special';
+@import 'sections/rent';
+@import 'sections/price';
+@import 'sections/gallery';
+@import 'sections/about-section';
+
 // Components
 
 @import 'components/header';
 @import 'components/footer';
+@import 'components/section';
+@import 'components/breadcrumbs';
+@import 'components/page';
+@import 'components/slider';
+@import 'components/card';
 @import 'components/hero';
-@import 'components/advantages';
-@import 'components/work';
-@import 'components/projects';
-@import 'components/reviews';
+@import 'components/game-item';
+@import 'components/possibility-item';
+@import 'components/application';
 @import 'components/order';
+@import 'components/complex';
+@import 'components/adv';
+@import 'components/advantages';
+@import 'components/stock';
+@import 'components/stock-item';
+@import 'components/pricelist-item';
+@import 'components/desc';
+@import 'components/news';
+@import 'components/article';
+@import 'components/article-item';
+@import 'components/pagination';
+@import 'components/filter';

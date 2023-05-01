@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include section/_desc
+    include includes/header
+    main 
+      section.hero 
+        .container 
+          .hero-wrapper 
+            .hero-content
+              .hero-info 
+                .hero__subtitle арендовать поле
+                .hero__title Корт для бадминтона
+                  .hero__badge Паркет
+                .hero__text Аренда поля для игры в бадминтон в СПб
+                .hero-services 
+                  .hero-services__item 
+                    span 20x40 
+                    | метров
+                  .hero-services__item 
+                    span до 50
+                    | человек
+                  .hero-services__item 
+                    span от 1 часа
+                    | аренды
+                .hero__btn.btn.btn--icon От 1000 ₽/час !
+              .hero-img
+                img(src="images/hero/hero-img.png", alt="") 
+      +descSection(descBadminton)
+      section.section.about-section 
+        .container 
+          .section-head 
+            h2.section__title О поле
+          .about-section__item 
+            .about-section__title Покрытие Regupol
+            .about-section__text Площадки, с уложенным на них REGUPOL PU, допускают высокие нагрузки, а также обладают великолепными игровыми качествами. Благодаря этому представляют собой оптимальные условия для занятия спортом, а также для организации культурно-массовых мероприятий. Эластичны и прочны, обладают повышенной звукоизоляцией!
+          .about-section__item 
+            .about-section__title Инвентарь
+            .about-section__text 
+              p Для вашего комфорта и удобства, мы предлагаем вам воспользоваться услугой «Инвентарь в аренду». Вы можете взять в аренду: ракетки и воланчики (комплект) — 200 руб./шт.
+              p Полотенце — 50 руб./шт.
+              p Мяч «4» или «5» — 200 руб./шт.
+              p Манишки (комплект) — 200 руб./6 шт. Цвета в ассортименте.
+              p Фишки (комплект) — 200 руб./набор
+              p По всем вопросам вы можете обратиться по телефону: +7(812) 322-6-55
+      include section/_gallery
+      include section/_price
+      include section/_advantages
+      include section/_additional-services
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Арендуйте поле для специльных мероприятий!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Специальные предложения
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/_special
+      include section/application
+    include includes/footer

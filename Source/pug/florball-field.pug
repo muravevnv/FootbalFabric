@@ -1,0 +1,85 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include section/_desc
+    include includes/header
+    main 
+      section.hero 
+        .container 
+          .hero-wrapper 
+            .hero-content
+              .hero-info 
+                .hero__subtitle арендовать поле
+                .hero__title Поле для флорбола
+                  .hero__badge Паркет
+                .hero__text Аренда поля для игры во флорбол в СПб
+                .hero-services 
+                  .hero-services__item 
+                    span 20x40 
+                    | метров
+                  .hero-services__item 
+                    span до 50
+                    | человек
+                  .hero-services__item 
+                    span от 1 часа
+                    | аренды
+                .hero__btn.btn.btn--icon От 1000 ₽/час !
+              .hero-img
+                img(src="images/hero/hero-img.png", alt="") 
+      section.section.desc 
+        .container 
+          .desc-content 
+            .desc__title Флорбол — известный вид спорта в скандинавских странах
+            .desc__text 
+              p На «Фабрике Футбола» для этой игры созданы отличные условия — 
+                | на полях #1 и #2 <span>нанесена разметка</span>, до начала игр устанавливаются специальные сертифицированные бортики и ворота. 
+              p <span>Электронное табло над площадками</span>, управляемое с помощью переносного планшета, позволяет следить за игровым временем и управлять счётом из любой точки поля.
+      section.section.about-section 
+        .container 
+          .section-head 
+            h2.section__title О поле
+          .about-section__item 
+            .about-section__title Как играют во флорбол?
+            .about-section__text В игре принимают участие две команды. Целью является забить как можно больше голов в ворота соперников, не нарушив при этом правила игры. Встречи обычно проводятся в помещении на жёсткой и ровной поверхности. Контролировать мяч допускается только клюшкой, имеющейся у всех полевых игроков
+          .about-section__item 
+            .about-section__title Сколько человек играет в флорбол?
+            .about-section__text От каждой команды на поле находятся пять игроков и вратарь. Однако количество игроков может меняться в зависимости назначенных удалений. Обычно команда состоит примерно из 20 полевых игроков и двух вратарей
+          .about-section__item 
+            .about-section__title Инвентарь
+            .about-section__text 
+              p Для вашего комфорта и удобства, мы предлагаем вам воспользоваться услугой «Инвентарь в аренду». Вы можете взять в аренду: ракетки и воланчики (комплект) — 200 руб./шт.
+              p Полотенце — 50 руб./шт.
+              p Мяч «4» или «5» — 200 руб./шт.
+              p Манишки (комплект) — 200 руб./6 шт. Цвета в ассортименте.
+              p Фишки (комплект) — 200 руб./набор
+              p По всем вопросам вы можете обратиться по телефону: +7(812) 322-6-55
+      include section/_gallery
+      include section/_price
+      include section/_advantages
+      include section/_additional-services
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Арендуйте поле для специльных мероприятий!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Специальные предложения
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/_special
+      include section/application
+    include includes/footer

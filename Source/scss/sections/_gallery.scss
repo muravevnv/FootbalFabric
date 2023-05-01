@@ -1,0 +1,28 @@
+.gallery {
+
+  &-list {
+    background-color: var(--color-white);
+    padding: 24px;
+    box-shadow: 0px 4px 40px rgba(11, 12, 13, 0.05);
+    border-radius: 50px;
+    overflow: hidden;
+
+    @include media(md) {
+      border-radius: 24px;
+      padding: 16px;
+    }
+  }
+
+  &-item {
+    overflow: hidden;
+    border-radius: 36px;
+
+    @include media(md) {
+      border-radius: 16px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

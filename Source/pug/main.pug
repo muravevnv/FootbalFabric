@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include includes/header
+    main 
+      include section/hero
+      section.section
+        .container 
+          .section-head 
+            h2.section__title КАКУЮ ИГРУ ПРЕДПОЧИТАЕТЕ?
+            .section__link.link-more
+              span Все услуги
+              <svg class="img" width="13.8" height="13.8">
+                <use xlink:href="images/sprite.svg#arrow-green"></use>
+              </svg>
+          include section/game-list
+      section.section
+        .container 
+          .section-head 
+            h2.section__title ЕЩЕ БОЛьШЕ ВОЗмОЖНОСТЕЙ!
+            .section__link.link-more
+              span Все услуги
+              <svg class="img" width="13.8" height="13.8">
+                <use xlink:href="images/sprite.svg#arrow-green"></use>
+              </svg>
+          include section/possibility-list
+      include section/application
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Еще больше развлечений!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+      section.section.special
+        .container 
+          .section-head 
+            h2.section__title Специальные предложения
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/_special
+      section.section
+        .container 
+          .section-head 
+            h2.section__title о комплексе
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/complex
+      include section/adv
+      include section/order
+    include includes/footer

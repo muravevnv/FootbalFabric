@@ -1,0 +1,26 @@
+
+-
+  var stockItems = [
+    {
+      idx: 1,
+      title: 'Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки'
+    },
+    {
+      idx: 1,
+      title: 'Утро на "Фабрике Футбола" - гарантия отличного дня!'
+    },
+    {
+      idx: 1,
+      title: 'Не проспи все праздники - приходи играть на "ФАБРИКУ" текст длин...'
+    },
+  ]
+
+.stock-list 
+  each item in stockItems
+    .stock-item 
+      .stock-item__img 
+        img(src="images/stock/stock-img.png", alt="")
+      a(href="#").stock-item__title= item.title 
+      .stock-item__bottom
+        .stock-item__icon
+          +svgSprite('arrow-black', 15, 15)

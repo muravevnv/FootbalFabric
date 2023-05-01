@@ -1,32 +1,138 @@
 .footer {
-  padding: 60px 0 24px;
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 48px 0 24px;
 
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  &__logo {
+    max-width: 213px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  &-contacts {
+    padding: 48px 0;
+    display: grid;
+    grid-template-columns: 1fr 389px 1fr;
+    border-bottom: 1px solid rgba( #EFEFF1, .1);
+
+    @include media(sm) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 32px 0;
+    }
+
+    > a {
+
+      &:hover {
+        color: var(--color-green);
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      @include media(sm) {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+
+      svg {
+        display: block;
+        margin-bottom: 16px;
+      }
+
+      > a {
+        color: var(--color-green);
+        text-decoration: underline;
+        margin-top: 16px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &-middle {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 48px 0;
+    border-bottom: 1px solid rgba( #EFEFF1, .1);
     gap: 24px;
-  }
 
-  &__company {
-    font-size: 18px;
-    line-height: 1.25;
-    text-transform: uppercase;
-  }
-
-  &__link {
-    display: inline-block;
-    margin-right: 6px;
+    @include media(sm) {
+      grid-template-columns: 1fr 1fr;
+      padding: 32px 0;
+    }
   }
 
   &-socials {
     display: flex;
-    align-items: center;
-    gap: 16px;
+    justify-content: center;
+    padding: 24px 0 0 0;
+    gap: 24px;
+  }
+
+  &-nav {
+    font-size: 15px;
+    line-height: 17px;
+
+    @include media(sm) {
+
+      &:nth-of-type(4) {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      } 
+      &:nth-of-type(3) {
+        padding-top: 41px;
+      } 
+    }
+
+    &__title {
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
 
     &__item {
-      text-transform: uppercase;
+      margin-bottom: 24px;
+
+      @include media(sm) {
+         margin-bottom: 16px;
+         font-size: 14px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      
+      > a {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          background-color: var(--color-white);
+          height: 1px;
+          bottom: -2px;
+          transform: translateY(4px);
+          opacity: 0;
+          transition: .3s;
+        }
+
+        &:hover {
+          
+          &::before {
+            transform: translateY(0);
+            opacity: 1;
+            transition: .3s;
+          }
+        }
+      }
     }
   }
 }

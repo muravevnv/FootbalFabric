@@ -1,0 +1,42 @@
+.about-section {
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    @include media(xs) {
+      gap: 16px;
+      flex-direction: column;
+    } 
+
+    + .about-section__item {
+      margin-top: 36px;
+      padding-top: 36px;
+      border-top: 1px solid #D9D9D9;
+
+      @include media(xs) {
+        margin-top: 24px;
+        padding-top: 24px;
+      }
+    }
+  }
+
+  &__title {
+    max-width: 514px;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    @include media(sm) {
+      font-size: 24px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}

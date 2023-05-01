@@ -1,0 +1,20 @@
+section.section.gallery
+  .container 
+    .section-head 
+      h2.section__title ФОТОГАЛЕРЕЯ
+    .gallery-list.js-gallery-slider
+      .swiper-wrapper 
+        .gallery-item.swiper-slide 
+          img(src="images/gallery/gallery-1.png", alt="")
+        .gallery-item.swiper-slide 
+          img(src="images/gallery/gallery-2.png", alt="")
+        .gallery-item.swiper-slide 
+          img(src="images/gallery/gallery-3.png", alt="")
+        .gallery-item.swiper-slide 
+          img(src="images/gallery/gallery-1.png", alt="")
+      .slider-navigation 
+        .slider-prev 
+          +svgSprite('arrow-gray', 15, 15)
+        .swiper-pagination 
+        .slider-next
+           +svgSprite('arrow-gray', 15, 15)

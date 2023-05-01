@@ -1,0 +1,26 @@
+- 
+  var possibilityItems = [
+    {
+      idx: 1,
+      title: 'Корпоративным клиентам',
+      text: 'Организация коллективных спортивных праздников и мероприятий от 10 до 150 человек',
+    },
+    {
+      idx: 2,
+      title: 'Школа футбола',
+      text: 'Организация коллективных спортивных праздников и мероприятий от 10 до 150 человек',
+    },
+    {
+      idx: 3,
+      title: 'Организация турниров',
+      text: 'Организация коллективных спортивных праздников и мероприятий от 10 до 150 человек',
+    },
+  ]
+
+.possibility-list
+  each item in possibilityItems
+    .possibility-item 
+      .possibility-item__img 
+        img(src=`images/possibility/possibility-${item.idx}.png`, alt="")
+      .possibility-item__title= item.title 
+      .possibility-item__text= item.text

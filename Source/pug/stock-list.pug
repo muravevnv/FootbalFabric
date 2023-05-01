@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Акции
+  body 
+    include includes/mixins
+    include includes/header
+    main
+      .page.stocks 
+        .container
+          .page-head 
+            h2.page__title Акции «ФабрикИ футбола»
+            .page__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          .stocks-filter 
+            .stocks-filter__item.active Все акции
+            .stocks-filter__item Актуальные
+            .stocks-filter__item Прошедшие
+          include section/_stock-list
+    include includes/footer

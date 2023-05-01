@@ -1,6 +1,7 @@
 :root {
   // Global
-  --font-family: 'Helvetica', sans-serif;
+  --font-family: 'Play', sans-serif;
+  --font-second: 'Manrope', sans-serif;
   --font-size: 16px;
   --line-height: 1.5;
   --border-radius: 8px;
@@ -9,17 +10,21 @@
 
   // Colors
   --color-black: #000;
+  --color-dark: #1B1D20;
   --color-white: #fff;
-  --color-bg: #F0EDE9;
-  --color-light: #F9F5F0;
-  --color-dark: #303030;
-  --color-primary: #DDD7C0;
-  --color-secondary: #CBC6B2;
-  --color-disabled: rgba(33, 37, 41, 0.5);
+  --color-text: #2C3035;
+  --color-primary: #2A9054;
+  --color-secondary: #C6F221;
+  --color-green: #66B821;
+  --color-green-darken: #00662A;
+  --color-yellow: #EABA40;
+  --color-bg: #F5F5F5;
+
   --color-neutral: #D9D9D9;
-  --color-gray: #505862;
+  --color-gray: #767A85;
   --color-border: #C0C0B9;
-  --color-error: #ef4444;
+  --color-orange: #FF6633;
+
 
 
   // Z-index

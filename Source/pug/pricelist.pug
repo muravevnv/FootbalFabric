@@ -1,0 +1,231 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Акции
+  body 
+    include includes/mixins
+    include includes/header
+    main 
+      .pricelist 
+        .container 
+          .page-head
+            h2.page__title Прайс на Услуги «ФабрикИ футбола»
+            .page__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          .pricelist-row
+            .pricelist-filter.filter 
+              .filter-item.active Все услуги
+              .filter-item Аренда
+              .filter-item Инвентарь
+              .filter-item Дополнительные услуги
+              .filter-item Дополнительные услуги Развлечения
+            a(href="#").pricelist__doc.link-more
+             span Загрузить .pdf
+             +svgSprite('arrow-green', 13, 13)
+          .pricelist-section
+            .pricelist-section__title Аренда
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4700 ₽ 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 5900 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4000 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 3000 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4700 ₽ 
+          .pricelist-section
+            .pricelist-section__title Инвентарь
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Мяч, размеры «4» или «5»
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 игра
+              .pricelist-item__rate 250 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Комплект манишек (6 шт.)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 игра
+              .pricelist-item__rate 250 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Фишки тренировочные
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 игра
+              .pricelist-item__rate 250 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Судейский набор (свисток, карточки)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 игра
+              .pricelist-item__rate 200 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда полотенца
+                  .pricelist-item__badge выходной
+              .pricelist-item__rate 50 ₽ 
+          .pricelist-section
+            .pricelist-section__title Фотоуслуги 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+                .pricelist-item__bottom Фотосъёмка игры
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate от 1500 ₽/час  
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+                .pricelist-item__bottom Игровые, командные фото, закрытия, открытия
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate от 1500 ₽/час 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+                .pricelist-item__bottom Фотосъёмка мероприятия, персональные, на фотокарточки
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate от 1500 ₽/час 
+          .pricelist-section
+            .pricelist-section__title Видеоуслуги
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate от 2000 ₽/час 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 700 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate от 1000 ₽/час 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate от 2000 ₽/час 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Аренда поля будни
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 1500 ₽/час  
+          .pricelist-section
+            .pricelist-section__title Развлечения
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Бампербол (Поле №5, Поле №6)
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4700 ₽ 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Бампербол (Поле №5, Поле №6)
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4000 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Бампербол (Поле №5, Поле №6)
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 3000 ₽
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Нёрф-баттл (Поле №6)
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4700 ₽ 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Нёрф-баттл (Поле №6)
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4700 ₽ 
+            .pricelist-item 
+              .pricelist-item__head 
+                .pricelist-item__top
+                  .pricelist-item__name Нёрф-баттл (Поле №6)
+                  .pricelist-item__time (с 09:00-18:00)
+                  .pricelist-item__badge выходной
+              .pricelist-item__hour 1 час
+              .pricelist-item__rate 4700 ₽ 
+      include section/order
+    include includes/footer

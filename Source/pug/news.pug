@@ -1,0 +1,88 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Акции
+  body 
+    include includes/mixins
+    include includes/header
+    - 
+      var newsList = [
+        {
+          idx: 1,
+          title: 'Детские праздники: 10 идей как развлечь детей на новый год',
+          date: '25.11.2022',
+          text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.'
+        },
+        {
+          idx: 2,
+          title: 'Детские праздники: 10 идей как развлечь детей на новый год',
+          date: '25.11.2022',
+          text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.'
+        },
+        {
+          idx: 3,
+          title: 'Детские праздники: 10 идей как развлечь детей на новый год',
+          date: '25.11.2022',
+          text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.'
+        },
+        {
+          idx: 4,
+          title: 'Детские праздники: 10 идей как развлечь детей на новый год',
+          date: '25.11.2022',
+          text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.'
+        },
+        {
+          idx: 5,
+          title: 'Детские праздники: 10 идей как развлечь детей на новый год',
+          date: '25.11.2022',
+          text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.'
+        },
+        {
+          idx: 6,
+          title: 'Детские праздники: 10 идей как развлечь детей на новый год',
+          date: '25.11.2022',
+          text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.'
+        }
+      ]
+    main
+      .news 
+        .container 
+          .section-head 
+            h2.section__title НОВОСТИ «ФабрикИ футбола»
+            a.section-link.link-more(href="#") 
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          .news-filter.filter 
+            .filter-item.active Все новости
+            .filter-item Объявления
+            .filter-item Школа футбола
+            .filter-item Новичкам
+          .news-content
+            .news-list 
+              each item in newsList
+                .news-item 
+                  .news-item__img 
+                    img(src=`images/news/news-${item.idx}.png`, alt="")
+                  .news-item__info 
+                    a(href="#").news-item__title= item.title 
+                    .news-item__date= item.date
+                    .news-item__text= item.text 
+                    .news-item__bottom 
+                      span Далее
+                      .news-item__link 
+                        +svgSprite('arrow-black', 15, 15)
+            .news-pagination.pagination 
+              .pagination-button.pagination-button--prev
+                +svgSprite('arrow-gray', 15, 15)
+              .pagination-button.active 1
+              .pagination-button 2
+              .pagination-button 3
+              .pagination-button 4
+              .pagination-button.pagination-button--next
+                +svgSprite('arrow-gray', 15, 15)
+    include includes/footer

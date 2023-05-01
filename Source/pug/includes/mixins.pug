@@ -1,0 +1,10 @@
+mixin svgSprite(name, width, height)
+  svg(width=width, height=height)
+    use(xlink:href=`images/sprite.svg#${name}`)
+
+mixin descSection(arr)
+  section.section.desc 
+    .container 
+      .desc-content 
+        .desc__title= arr.title
+        .desc__text= arr.text

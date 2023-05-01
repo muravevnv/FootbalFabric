@@ -1,0 +1,64 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Акция
+  body 
+    include includes/mixins
+    include includes/header
+    main
+      .stock 
+        .container
+          .breadcrumbs 
+            .breadcrumbs-list 
+              .breadcrumbs__item 
+                a(href="#") Акции 
+              .breadcrumbs__item 
+                a(href="#") Не проспи все праздники - приходи играть на «ФАБРИКУ»  
+          .stock-wrapper 
+            .stock__img 
+              img(src="images/stock/stock-img-big.png", alt="")
+            h1.stock__title Не проспи все праздники - приходи играть на «ФАБРИКУ» 
+            .stock__text Получи заряд бодрости и улётного настроения от хорошей игры! К тому же футбол стал еще доступнее — в будни с самого утра аренда ЦЕЛОГО поля всего 2350 руб/час! Зови коллег и скорее бронируй! 
+            .stock__tel Телефон для связи: 322-65-55
+            .stock__btn.btn Забронировать поле!
+          section.section.stock-others 
+            .section-head 
+              h2.section__title Другие предложения
+              .section-link.link-more 
+                span Все услуги
+            .stock-slider.js-slider
+              .swiper-wrapper 
+                .stock-item.swiper-slide
+                  .stock-item__img 
+                    img(src="images/stock/stock-img.png", alt="")
+                  a(href="#").stock-item__title Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки
+                  .stock-item__bottom
+                    .stock-item__icon
+                      +svgSprite('arrow-black', 15, 15)
+                .stock-item.swiper-slide
+                  .stock-item__img 
+                    img(src="images/stock/stock-img.png", alt="")
+                  a(href="#").stock-item__title Утро на "Фабрике Футбола" - гарантия отличного дня!
+                  .stock-item__bottom
+                    .stock-item__icon
+                      +svgSprite('arrow-black', 15, 15)
+                .stock-item.swiper-slide
+                  .stock-item__img 
+                    img(src="images/stock/stock-img.png", alt="")
+                  a(href="#").stock-item__title Не проспи все праздники - приходи играть на "ФАБРИКУ" текст длин...
+                  .stock-item__bottom
+                    .stock-item__icon
+                      +svgSprite('arrow-black', 15, 15)
+                .stock-item.swiper-slide
+                  .stock-item__img 
+                    img(src="images/stock/stock-img.png", alt="")
+                  a(href="#").stock-item__title Не проспи все праздники - приходи играть на "ФАБРИКУ" текст длин...
+                  .stock-item__bottom
+                    .stock-item__icon
+                      +svgSprite('arrow-black', 15, 15)
+      include includes/footer

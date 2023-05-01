@@ -1,0 +1,38 @@
+-
+  var eventsItems = [
+    {
+      idx: 1,
+      title: 'Детские праздники',
+      price: 'от 1 550 ₽/час'
+    },
+    {
+      idx: 1,
+      title: 'Бампербол',
+      price: 'от 1 550 ₽/час'
+    },
+    {
+      idx: 1,
+      title: 'Нёрфинг',
+      price: 'от 1 550 ₽/час'
+    },
+    {
+      idx: 1,
+      title: 'Детские праздники',
+      price: 'от 1 550 ₽/час'
+    },
+  ]
+
+.events-list.js-slider.slider
+  .swiper-wrapper 
+    each item in eventsItems
+      .card-item.swiper-slide 
+        .card-item__img 
+          img(src=`images/events/events-${item.idx}.png`, alt="")
+        .card-item__info 
+          .card-item__title= item.title
+        .card-item__bottom 
+          .card-item__price= item.price
+          .card-item__icon
+            +svgSprite('arrow-black', 15, 15)
+  .slider-pagination 
+    .swiper-pagination

@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include includes/header
+    main 
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Выбрать поле по виду спорта
+            .section__link.link-more
+              span Все услуги
+              <svg class="img" width="13.8" height="13.8">
+                <use xlink:href="images/sprite.svg#arrow-green"></use>
+              </svg>
+          include section/game-list
+      section.section.rent
+        .container 
+          .section-head 
+            h2.section__title АРЕНДА ИГРОВЫХ ПОЛЕЙ
+            .section__link.link-more
+              span Все услуги
+              <svg class="img" width="13.8" height="13.8">
+                <use xlink:href="images/sprite.svg#arrow-green"></use>
+              </svg>
+          include section/_rent
+      include section/application
+      include section/order
+    include includes/footer

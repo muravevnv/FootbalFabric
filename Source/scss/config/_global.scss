@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   line-height: var(--line-height);
   text-rendering: optimizespeed;
-  background-color: var(--color-white);
+  background-color: var(--color-bg);
 
   &.scroll {
     height: 100vh;
@@ -105,8 +105,42 @@ select {
  }
 
 .container {
-  max-width: 1416px;
+  max-width: 1336px;
   padding: 0 20px;
   width: 100%;
   margin: 0 auto;
+
+  @include media(sm) {
+    padding: 0 16px;
+  }
+}
+
+.link-more {
+  padding: 13px 16px;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 700;
+  border-radius: 16px;
+  cursor: pointer;
+
+  svg {
+    width: 13px;
+    height: 13px;
+    fill: var(--color-primary);
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    svg {
+      fill: var(--color-white);
+    }
+  }
 }

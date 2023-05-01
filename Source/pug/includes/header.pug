@@ -1,15 +1,41 @@
 header.header
-    .container
-        a(href="#").header__logo
-            img(src="images/logo.svg" alt="Aveji")
-        nav.header-nav
-            ul.header-nav__list
-                li.header-nav__item.link
-                    a(href="#") О нас
-                li.header-nav__item.link
-                    a(href="#") Проекты
-                li.header-nav__item.link
-                    a(href="#") Материалы
-                li.header-nav__item.link
-                    a(href="#") Отзывы
-        a(href="tel:+7 999 999 99 99").header__tel.link +7 999 999 99 99
+    .container 
+        a.header__logo(href="#")
+            img(src="images/logo.svg", alt="ФФ") 
+        nav.header-nav 
+            ul.header-nav__list 
+                li.header-nav__item.active 
+                    a(href="#" data-text="Главная") 
+                        span Главная
+                li.header-nav__item 
+                     a(href="#" data-text="Аренда") 
+                        span Аренда
+                li.header-nav__item 
+                     a(href="#" data-text="Услуги") 
+                        span Услуги
+                li.header-nav__item 
+                     a(href="#" data-text="Цены") 
+                        span Цены
+                li.header-nav__item 
+                     a(href="#" data-text="Акции") 
+                        span Акции
+                li.header-nav__item 
+                     a(href="#" data-text="Новости") 
+                        span Новости
+                li.header-nav__item 
+                     a(href="#" data-text="О нас") 
+                        span О нас
+                li.header-nav__item 
+                     a(href="#" data-text="Контакты") 
+                        span Контакты
+        a.header__tel(href="#") +7 (812) 322-6-555
+        .header-action 
+            a.header__social.socials-item(href="#") 
+                +svgSprite('tg', 16, 16)
+            a.header__social.socials-item(href="#") 
+                +svgSprite('vk', 16, 16)
+            a.header__link.btn.btn--border(href="#") Заказать звонок
+        .header__burger.js-burger 
+            span
+            span
+            span

@@ -1,0 +1,73 @@
+section.section.application 
+  .container 
+    .application-wrapper 
+      .application-content 
+        .application-head 
+          h2.application__title ЗАЯВКА НА АРЕНДУ ПОЛЯ
+          .application__subtitle Заполните форму, и наш специалист свяжется с Вами для подтверждения заказа:
+        form.application-form(action="#")
+          .application-form-left 
+            .application-section 
+              .application-section__title Данные игры
+              .form-row 
+                .form-item 
+                  label.form__label(for="") 
+                  input.form__input(type="text" placeholder="Выберите время")
+                .form-item 
+                  label.form__label(for="") 
+                  input.form__input(type="text" placeholder="Выберите время")
+              .form-row 
+                .form-item 
+                  label.form__label(for="") 
+                  input.form__input(type="text" placeholder="Продолжительность игры...")
+                .form-item 
+                  label.form__label(for="") 
+                  input.form__input(type="text" placeholder="Продолжительность игры...")
+            .application-section 
+              .application-section__title Ваши данные
+              .form-item 
+                label.form__label(for="") 
+                input.form__input(type="text" placeholder="Ваше имя")
+              .form-item 
+                label.form__label(for="") 
+                input.form__input(type="text" placeholder="+7 (___) ___-__-__")
+          .application-form-right  
+            .application-section 
+              .application-section__title Дополнительные услуги
+              .form-section 
+                .form-section__title Инвентарь:
+                .form-section__body 
+                  .checkbox 
+                    input(type="checkbox", name="" id="check-1" class="checkbox__input")
+                    label(for="check-1" class="checkbox__label") Манишки 
+                      span (+100 ₽) 
+                  .checkbox 
+                    input(type="checkbox", name="" id="check-2" class="checkbox__input")
+                    label(for="check-2" class="checkbox__label") Фишки
+                      span (+100 ₽) 
+                  .checkbox 
+                    input(type="checkbox", name="" id="check-3" class="checkbox__input")
+                    label(for="check-3" class="checkbox__label") Мячи 
+                      span (+100 ₽) 
+                  .checkbox 
+                    input(type="checkbox", name="" id="check-4" class="checkbox__input")
+                    label(for="check-4" class="checkbox__label") Еще название в две строки 
+                      span (+100 ₽) 
+              .form-section 
+                .form-section__title Обслуживание игры:
+                .form-section__body 
+                  .checkbox 
+                    input(type="checkbox", name="" id="check-5" class="checkbox__input")
+                    label(for="check-5" class="checkbox__label") Тренер 
+                      span (+2 500 ₽/час) 
+                  .checkbox 
+                    input(type="checkbox", name="" id="check-6" class="checkbox__input")
+                    label(for="check-6" class="checkbox__label") Судья
+                      span (+1 500 ₽)  
+        .application-bottom 
+          .application-total 
+            .application__price Итого:
+              span 5 890₽ 
+            .application__btn.btn Отправить!
+          .application__text Нажимая кнопку «Отправить!», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ 
+            | «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных *

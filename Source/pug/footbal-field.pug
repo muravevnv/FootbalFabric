@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include section/_desc
+    include includes/header
+    main 
+      section.hero 
+        .container 
+          .hero-wrapper 
+            .hero-content
+              .hero-info 
+                .hero__subtitle арендовать поле
+                .hero__title Поле №1
+                  .hero__badge Паркет
+                .hero__text Аренда поля для игры в футбол в СПб
+                .hero-services 
+                  .hero-services__item 
+                    span 20x40 
+                    | метров
+                  .hero-services__item 
+                    span до 50
+                    | человек
+                  .hero-services__item 
+                    span от 1 часа
+                    | аренды
+                .hero__btn.btn.btn--icon От 1000 ₽/час !
+              .hero-img
+                img(src="images/hero/hero-img.png", alt="") 
+      section.section.about-section 
+        .container 
+          .section-head 
+            h2.section__title О поле
+          .about-section__item 
+            .about-section__title Что такое?
+            .about-section__text Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры
+          .about-section__item 
+            .about-section__title Трава последнего поколения
+            .about-section__text Качественный искусственный газон с высотой ворса 6 см позволяет получить от игры максимум удовольствия. Во-первых, мяч ведёт себя на газоне более предсказуемо, что позволяет игрокам делать изящные пасы и наносить точные удары. Во-вторых, футбол — всё-таки контактный вид спорта, в котором случаются столкновения и падения. Шанс получения травмы при падении на газон с резиновой крошкой крайне низок
+      include section/_gallery
+      include section/_price
+      include section/_advantages
+      include section/_additional-services
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Арендуйте поле для специльных мероприятий!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Специальные предложения
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/_special
+      include section/application
+    include includes/footer

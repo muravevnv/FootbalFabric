@@ -1,33 +1,70 @@
 .order {
-  padding: 60px 0;
 
-  .container {
+  &-wrapper {
+    background-color: var(--color-white);
+    box-shadow: 0px 4px 40px rgba(11, 12, 13, 0.05);
+    padding: 20px;
     display: flex;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 24px;
+    border-radius: 60px;
+
+    @include media(sm) {
+      flex-direction: column-reverse;
+      padding: 16px;
+      border-radius: 24px;
+    }
+
+    @include media(sm) {
+      gap: 16px;
+    }
   }
 
-  &__img {
-    max-width: 562px;
+  &-map {
+    max-width: 728px;
+    min-width: 50%;
     width: 100%;
+    overflow: hidden;
+    border-radius: 40px;
+
+    @include media(sm) {
+      border-radius: 24px;
+    }
+
+    @include media(xs) {
+      iframe {
+        height: 320px;
+      }
+    }
   }
 
-  &-desc {
-    max-width: 678px;
-    width: 100%;
+  &-content {
+    padding: 35px 50px;
+
+    @include media(lg) {
+      padding: 24px;
+    }
+    
+    @include media(md) {
+      padding: 16px 0;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 24px;
+
+    @include media(sm) {
+      margin-bottom: 16px;
+    }
   }
 
   &__subtitle {
-    margin-bottom: 72px;
-  }
+    text-align: center;
+    margin-bottom: 24px;
 
-  &-form {
-    margin-bottom: 40px;
-  }
-
-  &-app {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    @include media(sm) {
+      margin-bottom: 16px;
+      font-size: 14px;
+    }
   }
 }

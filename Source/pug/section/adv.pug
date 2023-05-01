@@ -1,0 +1,33 @@
+-
+  var advItems = [
+    {
+      idx: 1,
+      title: 'ИГРОВЫЕ ПОЛЯ',
+      text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать  в формате 5х5, для тренировок, на которых вы сможете отрабатывать '
+    },
+    {
+      idx: 2,
+      title: 'Балкон для зрителей',
+      text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать  в формате 5х5, для тренировок, на которых вы сможете отрабатывать '
+    },
+    {
+      idx: 3,
+      title: 'Трава последнего поколения',
+      text: 'Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать  в формате 5х5, для тренировок, на которых вы сможете отрабатывать '
+    },
+  ]
+
+section.section.adv 
+  .container 
+    .adv-slider.js-adv-slider.slider 
+      .swiper-wrapper 
+        each item in advItems
+          .adv-item.swiper-slide 
+            .adv-item__img 
+              img(src=`images/advantages/advantages-${item.idx}.png`, alt="")
+            .adv-item__num= `0${item.idx}`
+            .adv-item__info 
+              .adv-item__title= item.title 
+              .adv-item__text= item.text
+      .slider-pagination 
+        .swiper-pagination

@@ -1,0 +1,20 @@
+.page {
+  padding: 72px 0;
+
+  @include media(sm) {
+    padding: 40px 0;
+  }
+
+  &-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+    @include media(sm) {
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,9 +1,71 @@
 footer.footer
-    .container
-        .footer-company © 2023 Aveji, Все права защищены
-        .footer-links
-            a(href="#").footer__link Политика конфеденциальности /
-            a(href="#").footer__link Оплата и доставка
-        .footer-socials
-            a(href="#").footer-socials__item Вконтакте
-            a(href="#").footer-socials__item Телеграм
+  .container 
+    a.footer__logo(href="#")
+      img(src="images/logo-footer.svg", alt="")
+    .footer-contacts 
+      a(href="mailto:info@ff.ru.net").footer-contacts__item 
+        +svgSprite('mail', 16, 16)
+        span info@ff.ru.net
+      .footer-contacts__item 
+        +svgSprite('map', 16, 16)
+        span 192102, Санкт-Петербург, ул. Софийская, д.14 Спортивный центр «Фабрика Футбола»
+        a(href="#") Как добраться?
+      a(href="tel:+7 (812) 322-6-555").footer-contacts__item 
+        +svgSprite('tel', 16, 16)
+        span +7 (812) 322-6-555
+    .footer-middle
+      nav.footer-nav
+        .footer-nav__title Аренда полей
+        ul.footer-nav__list 
+          li.footer-nav__item 
+            a(href="#") Поле для футбола
+          li.footer-nav__item 
+            a(href="#") Корт для бадминтона
+          li.footer-nav__item 
+            a(href="#") Поле для флорбола
+      nav.footer-nav.footer-nav--big
+        .footer-nav__title Услуги
+        ul.footer-nav__list 
+          li.footer-nav__item 
+            a(href="#") Детские праздники
+          li.footer-nav__item 
+            a(href="#") Нёрфинг (нёрф-баттл)
+          li.footer-nav__item 
+            a(href="#") Бампербол
+          li.footer-nav__item 
+            a(href="#") Веселые старты
+          li.footer-nav__item 
+            a(href="#") Реклама на мероприятиях
+      nav.footer-nav
+        ul.footer-nav__list 
+          li.footer-nav__item 
+            a(href="#") Прайс-лист
+          li.footer-nav__item 
+            a(href="#") Акции
+          li.footer-nav__item 
+            a(href="#") Новости
+          li.footer-nav__item 
+            a(href="#") О нас
+          li.footer-nav__item 
+            a(href="#") Контакты
+      nav.footer-nav
+        .footer-nav__title Корпоративным клиентам
+        ul.footer-nav__list 
+          li.footer-nav__item 
+            a(href="#") Реклама на мероприятиях
+          li.footer-nav__item 
+            a(href="#") Правовая информация
+          li.footer-nav__item 
+            a(href="#") Доступная среда
+          li.footer-nav__item 
+            a(href="#") Политика конфиденциальности
+    .footer-bottom 
+      .footer-socials.socials 
+        a(href="").socials-item
+          +svgSprite('tg', 18, 18)
+        a(href="").socials-item
+           +svgSprite('vk', 18, 18)
+
+
+script(src="scripts/swiper-bundle.min.js") 
+script(src="scripts/main.js") 

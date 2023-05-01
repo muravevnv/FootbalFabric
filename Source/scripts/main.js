@@ -1,73 +1,125 @@
 console.log('111')
 
-const slider = new Swiper('.slider',{
-  slidesPerView: 3,
-  spaceBetween: 32,
+const heroSlider = new Swiper('.js-hero-slider',{
+  slidesPerView: 1,
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
   navigation:{
     prevEl:'.slider-prev',
-    nextEl:'.slider-next',
+    nextEl:'.slider-next'
+  }
+
+});
+
+const slider = new Swiper('.js-slider',{
+  slidesPerView: 3,
+  spaceBetween: 24,
+  adaptiveHeight: true,
+  pagination: {
+    el: ".swiper-pagination",
+    type:"progressbar"
   },
   breakpoints: {
     0:{
       slidesPerView: 1,
-      spaceBetween: 32,
+      spaceBetween: 16,
+    },
+    495:{
+      slidesPerView: 1.6,
+      spaceBetween: 16,
     },
     768:{
-      slidesPerView: 2,
-      spaceBetween: 32,
+      slidesPerView: 2.5,
+      spaceBetween: 24,
     },
-    1024:{
+    960: {
       slidesPerView: 3,
-      spaceBetween: 32,
-    },
+    }
   }
 });
 
-
-$('.js-open-modal').on('click', function(){
-  let id = $(this).data('modal');
-  let modal = $(`.modal[data-modal=${id}]`);
-  $('.modal').removeClass('active');
-  modal.addClass('active');
-})
-
-$(document).on('click', '.js-close-modal, .js-overlay-modal', function() {
-  $('.modal').removeClass('active');
-})
-
-
-$('.js-open-menu').on('click', function(){
-  $('.js-menu').toggleClass('active');
-  $(this).toggleClass('active');
-})
-
-
-$('.article-asside__item span').on('click',  function(){
-  $(this).parent().toggleClass('opened');
-  $(this).next().slideToggle();
-
-})
-
-
-;(function ($) { $.fn.datepicker.language['en'] = {
-  days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-  daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-  months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
-  monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  today: 'Today',
-  clear: 'Clear',
-  dateFormat: 'mm/dd/yyyy',
-  timeFormat: 'hh:ii aa',
-  firstDay: 0
-}; })(jQuery);
-                                
-// Initialize datepicker with it
-$('.my-datepicker').datepicker({
-language: 'ru'
+const advSlider = new Swiper('.js-adv-slider',{
+  slidesPerView: 2.3,
+  spaceBetween: 44,
+  pagination: {
+    el: ".swiper-pagination",
+    type:"progressbar"
+  },
+  breakpoints: {
+    0:{
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    495:{
+      slidesPerView: 1.6,
+      spaceBetween: 16,
+    },
+    768:{
+      slidesPerView: 2,
+      spaceBetween: 24,
+    },
+    960: {
+      slidesPerView: 2.3,
+      spaceBetween: 44,
+    }
+  }
 });
 
-$('button').click(function(){
-var datepicker = $('.my-datepicker').data('datepicker');
-datepicker.date = new Date(2018, 11, 30);
-})
+const gallerySlider = new Swiper('.js-gallery-slider',{
+  slidesPerView: 3,
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation:{
+    prevEl:'.slider-prev',
+    nextEl:'.slider-next'
+  },
+  breakpoints: {
+    0:{
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    495:{
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    }
+  }
+});
+
+const articleSlider = new Swiper('.js-article-slider',{
+  slidesPerView: 4,
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation:{
+    prevEl:'.slider-prev',
+    nextEl:'.slider-next'
+  },
+  breakpoints: {
+    0:{
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    495:{
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    960: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    }
+  }
+});
+

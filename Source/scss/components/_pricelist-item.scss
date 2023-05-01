@@ -1,0 +1,130 @@
+.pricelist {
+  padding: 72px 0 48px;
+
+  @include media(sm) {
+    padding: 48px 0 32px;
+  }
+
+  &__doc {
+    box-shadow: 0px 4px 40px rgba(11, 12, 13, 0.05);
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    @include media(sm) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &-section {
+    &__title {
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--color-green);
+      padding: 12px 0;
+      margin-bottom: 24px;
+    }
+
+    + .pricelist-section {
+      margin-top: 60px;
+
+      @include media(sm) {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e4e4e7;
+
+    @include media(sm) {
+      flex-wrap: wrap;
+    }
+
+    + .pricelist-item {
+      margin-top: 25px;
+
+      @include media(sm) {
+        margin-top: 16px;
+      }
+    }
+
+    &__head {
+      width: 50%;
+
+      @include media(sm) {
+        width: 100%;
+      }
+    }
+
+    &__top {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @include media(sm) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__bottom {
+      margin-top: 8px;
+    }
+
+    &__name {
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    &__time {
+      font-size: 15px;
+      line-height: 1;
+    }
+
+    &__badge {
+      padding: 4px 8px;
+      font-size: 11px;
+      line-height: 1;
+      font-weight: 700;
+      color: var(--color-white);
+      background-color: var(--color-yellow);
+      border-radius: 7px;
+    }
+
+    &__hour {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1;
+    }
+
+    &__rate {
+      font-size: 20px;
+      line-height: 1;
+      color: var(--color-gray);
+      width: 10%;
+      text-align: right;
+
+      @include media(lg) {
+        font-size: 16px;
+      }
+
+      @include media(sm) {
+        width: auto;
+      }
+    }
+  }
+}
