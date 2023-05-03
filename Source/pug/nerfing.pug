@@ -1,0 +1,71 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include section/_desc
+    include includes/header
+    main 
+      section.hero 
+        .container 
+          .hero-wrapper 
+            .hero-content
+              .hero-info 
+                .hero__subtitle нёрфинг
+                .hero__title Нёрфинг — командная игра с бластерами Nerf Rival
+                .hero-services 
+                  .hero-services__item 
+                    span 3-15
+                    | человек
+                  .hero-services__item 
+                    span от 1
+                    | часа
+                  .hero-services__item 
+                    span от 1550 ₽ 
+                    | в час
+                .hero__btn.btn Играть в нёрфинг!
+              .hero-img
+                img(src="images/hero/hero-img.png", alt="") 
+      section.section.desc 
+        .container 
+          .desc-content 
+            .desc__title Активные бои для детей и их родителей с бластерами компании Hasbro
+            .desc__text 
+              p «Фабрика Футбола»  предлагает взрослым и детям новую спортивную командная игру c использованием бластеров с шариками. Разные сценарии, разные уровни, но выигрывают только самые ловкие, быстрые и точные.
+              | Погружайся в Нёрфинг вместе с нами, докажи, что ты лучший! 
+             
+      section.section.about-section 
+        .container 
+          .section-head 
+            h2.section__title ОБ УСЛУГЕ
+          .about-section__item 
+            .about-section__title Что такое Nerf (Нёрф)?
+            .about-section__text Нёрфинг- это активные бои для детей и их родителей с бластерами из самой крутой линейки детских пушек Hasbro, где патроны — <span>поролоновые шарики</span>. Скорость полета шарика достигает 30 метров в секунду! 
+          .about-section__item 
+            .about-section__title Бластеры серии Nerf Rival
+            .about-section__text 
+              p Это — мощные <span>бластеры последнего поколения</span>. Их главным отличием от других моделей бластеров является использование круглых, мягких пуль вместо традиционных стрел.
+              p Пули обладают гораздо лучшими показателями по дальности стрельбы, увереннее держатся в полете и способны нанести максимально точный удар. Пружинящий материал снарядов <span>не причиняет телесных повреждений</span>. В нашем арсенале есть как детские миниганы, так и взрослые пушки.
+              p Созданы специально для командной игры, они превращают привычный нёрфинг в нечто совершенно новое и невероятно захватывающее!
+          .about-section__item 
+            .about-section__title Что такое Открытые бои?
+            .about-section__text Ты участвуешь в <span>сражениях с незнакомцами</span> и против незнакомцев. Но можешь привести свою <span>команду до 6 человек.</span>
+      include section/_gallery
+      include section/_price
+      include section/_additional-services
+      include section/order
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Арендуйте поле для специльных мероприятий!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+    include includes/footer

@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include section/_desc
+    include includes/header
+    main 
+      section.hero 
+        .container 
+          .hero-wrapper 
+            .hero-content
+              .hero-info 
+                .hero__subtitle КОРПОРАТИВНЫМ КЛИЕНТАМ
+                .hero__title Проведение корпоративных спортивных мероприятий в СПб
+                .hero-services 
+                  .hero-services__item 
+                    span 3-15
+                    | человек
+                  .hero-services__item 
+                    span от 1
+                    | часа
+                  .hero-services__item 
+                    span от 1550 ₽ 
+                    | в час
+                .hero__btn.btn От 1000 ₽/час !
+              .hero-img
+                img(src="images/hero/hero-img.png", alt="") 
+      section.section.desc 
+        .container 
+          .desc-content 
+            .desc__title «Фабрика Футбола» готова предложить вам новую услугу – организацию корпоративного мероприятия. 
+            .desc__text Футбольное мероприятие – идеально, но наш спортивный центр подойдёт и для других видов спорта, проведению спартакиад трудовых коллективов, принятию части нормативов комплекса ГТО и многого другого. И всё — под одной крышей. При чём не только для взрослых, но и для детей: детский футбольный турнир – наш профиль. Мы проводим на регулярной основе собственные соревнования турниры и организуем турниры в Санкт-Петербурге под ключ
+      include section/_capability
+      include section/_gallery
+      include section/_advantages
+      include section/_additional-services
+      include section/order
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Арендуйте поле для специльных мероприятий!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+    include includes/footer

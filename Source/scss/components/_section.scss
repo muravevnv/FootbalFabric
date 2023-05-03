@@ -23,5 +23,11 @@
 
   &__title {
     color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    @include media(sm) {
+      padding-left: 0;
+    }
   }
 }
