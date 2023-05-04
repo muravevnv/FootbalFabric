@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Главная
+  body 
+    include includes/mixins
+    include section/_desc
+    include includes/header
+    main 
+      section.hero 
+        .container 
+          .hero-wrapper 
+            .hero-content
+              .hero-info 
+                .hero__subtitle Проведение турниров
+                .hero__title Организация спортивных турниров и соревнований в СПб
+                  .hero__badge Паркет
+                .hero-services 
+                  .hero-services__item 
+                    span 20x40 
+                    | метров
+                  .hero-services__item 
+                    span до 50
+                    | человек
+                  .hero-services__item 
+                    span от 1 часа
+                    | аренды
+                .hero__btn.btn.btn--icon Организовать турнир!
+              .hero-img
+                img(src="images/hero/hero-img.png", alt="") 
+      include section/_tournaments-list
+      include section/_event
+      include section/_gallery
+      include section/_advantages
+      include section/_additional-services
+      section.section
+        .container 
+          .section-head 
+            h2.section__title Арендуйте поле для специльных мероприятий!
+            .section__link.link-more
+              span Все услуги
+              +svgSprite('arrow-green', 13, 13)
+          include section/events
+      include section/order
+    include includes/footer
