@@ -1,0 +1,38 @@
+
+-
+  var stockItems = [
+    {
+      idx: 1,
+      title: 'Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки'
+    },
+    {
+      idx: 1,
+      title: 'Утро на "Фабрике Футбола" - гарантия отличного дня!'
+    },
+    {
+      idx: 1,
+      title: 'Не проспи все праздники - приходи играть на "ФАБРИКУ" текст длин...'
+    },
+    {
+      idx: 1,
+      title: 'Утро на "Фабрике Футбола" - гарантия отличного дня!'
+    },
+  ]
+
+section.section.stock-section 
+  .container 
+    .section-head 
+      h2.section__title СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+      .section__link.link-more 
+        span Все акции
+        +svgSprite('arrow-green', 13, 13)
+    .stock-slider.js-stock-slider
+      .swiper-wrapper 
+        each item in stockItems
+          .stock-item.swiper-slide
+            .stock-item__img 
+              img(src="images/stock/stock-img.png", alt="")
+            a(href="#").stock-item__title= item.title 
+            .stock-item__bottom
+              .stock-item__icon
+                +svgSprite('arrow-black', 15, 15)

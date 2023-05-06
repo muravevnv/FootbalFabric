@@ -46,7 +46,9 @@ html(lang="en")
             .about-section__text Качественный искусственный газон с высотой ворса 6 см позволяет получить от игры максимум удовольствия. Во-первых, мяч ведёт себя на газоне более предсказуемо, что позволяет игрокам делать изящные пасы и наносить точные удары. Во-вторых, футбол — всё-таки контактный вид спорта, в котором случаются столкновения и падения. Шанс получения травмы при падении на газон с резиновой крошкой крайне низок
       include section/_gallery
       include section/_price
-      include section/_advantages
+      section.section.advantages
+        .container
+          include section/_advantages
       include section/_additional-services
       section.section
         .container 
@@ -63,6 +65,6 @@ html(lang="en")
             .section__link.link-more
               span Все услуги
               +svgSprite('arrow-green', 13, 13)
-          include section/_special
+          include section/_stock
       include section/application
     include includes/footer

@@ -123,3 +123,34 @@ const articleSlider = new Swiper('.js-article-slider',{
   }
 });
 
+const stockSlider = new Swiper('.js-stock-slider',{
+  slidesPerView: 3,
+  spaceBetween: 24,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    0:{
+      slidesPerView: 1,
+
+    },
+    375:{
+      slidesPerView: 1.2,
+    },
+    495: {
+      slidesPerView: 1.3
+    },
+    768: {
+      slidesPerView: 1.5,
+    },
+    800: {
+      slidesPerView: 2,
+    },
+    960: {
+      slidesPerView: 3,
+
+    }, 
+  }
+});
+
+

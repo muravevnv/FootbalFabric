@@ -46,7 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 8px;
+    gap: 12px;
     padding-bottom: 16px;
     border-bottom: 1px solid #e4e4e7;
 
@@ -62,37 +62,24 @@
       }
     }
 
-    &__head {
-      width: 50%;
-
-      @include media(sm) {
-        width: 100%;
-      }
-    }
-
-    &__top {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-
-      @include media(sm) {
-        flex-wrap: wrap;
-      }
-    }
-
-    &__bottom {
-      margin-top: 8px;
-    }
-
     &__name {
       font-size: 18px;
       line-height: 1;
       font-weight: 700;
+      width: 50%;
+
+      @include media(sm) {
+        font-size: 20px;
+      }
     }
 
     &__time {
       font-size: 15px;
       line-height: 1;
+      width: 20%;
+      text-align: center;
+
+
     }
 
     &__badge {
@@ -109,17 +96,29 @@
       font-weight: 700;
       font-size: 18px;
       line-height: 1;
+      width: 20%;
+      text-align: center;
+
+      @include media(sm) {
+        font-size: 16px;
+      }
+
+      @include media(xs) {
+        width: 100%;
+        order: 5;
+        text-align: left;
+      }
     }
 
     &__rate {
       font-size: 20px;
       line-height: 1;
       color: var(--color-gray);
-      width: 10%;
+      width: 30%;
       text-align: right;
 
-      @include media(lg) {
-        font-size: 16px;
+      @include media(sm) {
+        font-size: 18px;
       }
 
       @include media(sm) {

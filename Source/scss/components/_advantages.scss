@@ -1,4 +1,13 @@
 .advantages {
+  &-info {
+    padding-bottom: 48px;
+    margin-bottom: 24px;
+
+    @include media(sm) {
+      padding-bottom: 36px;
+    }
+  }
+
   &-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

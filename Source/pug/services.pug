@@ -1,0 +1,97 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Акции
+  body 
+    include includes/mixins
+    include includes/header
+    main
+      .services
+        .container 
+          .section-head 
+            h2.section__title Услуги «ФабрикИ футбола»
+          .services-filter.filter 
+            .filter-item.active Все услуги
+            .filter-item Корпоративные мероприятия
+            .filter-item Взрослым
+            .filter-item Детям
+          .services-content 
+            .services-item 
+              .services-item__img 
+                img(src="images/news/news-1.png", alt="")
+              .services-item__info 
+                .services-item__title Детские праздники
+                .services-item__text Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.
+                .services-item__tags 
+                  .services-item__tag До 50 человек
+                  .services-item__tag От 1 часа
+                  .services-item__tag Выдача экипировки
+              .services-item__bottom 
+                .services-item__price от 1 550 ₽/час
+                .services-item__link
+                  +svgSprite('arrow-black', 13, 13)
+            .services-item 
+              .services-item__img 
+                img(src="images/news/news-2.png", alt="")
+              .services-item__info 
+                .services-item__title Бампербол
+                .services-item__text Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.
+                .services-item__tags 
+                  .services-item__tag До 50 человек
+                  .services-item__tag От 1 часа
+                  .services-item__tag Выдача экипировки
+              .services-item__bottom 
+                .services-item__price от 1 550 ₽/час
+                .services-item__link
+                  +svgSprite('arrow-black', 13, 13)
+            .services-item 
+              .services-item__img 
+                img(src="images/news/news-3.png", alt="")
+              .services-item__info 
+                .services-item__title Нёрфинг/нёрф-баттл
+                .services-item__text Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.
+                .services-item__tags 
+                  .services-item__tag До 50 человек
+                  .services-item__tag От 1 часа
+                  .services-item__tag Выдача экипировки
+              .services-item__bottom 
+                .services-item__price от 1 550 ₽/час
+                .services-item__link
+                  +svgSprite('arrow-black', 13, 13)
+            .services-item 
+              .services-item__img 
+                img(src="images/news/news-4.png", alt="")
+              .services-item__info 
+                .services-item__title Веселые старты
+                .services-item__text Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.
+                .services-item__tags 
+                  .services-item__tag До 50 человек
+                  .services-item__tag От 1 часа
+                  .services-item__tag Выдача экипировки
+              .services-item__bottom 
+                .services-item__price от 1 550 ₽/час
+                .services-item__link
+                  +svgSprite('arrow-black', 13, 13)
+            .services-item 
+              .services-item__img 
+                img(src="images/news/news-5.png", alt="")
+              .services-item__info 
+                .services-item__title Реклама на мероприятиях
+                .services-item__text Наши поля идеально подходят для проведения соревнований в формате 5х5, для тренировок, на которых вы сможете отрабатывать футбольные приёмы, совершенствовать контроль мяча, улучшать технику игры.
+                .services-item__tags 
+                  .services-item__tag До 50 человек
+                  .services-item__tag От 1 часа
+                  .services-item__tag Выдача экипировки
+              .services-item__bottom 
+                .services-item__price от 1 550 ₽/час
+                .services-item__link
+                  +svgSprite('arrow-black', 13, 13)
+      include section/_additional-services
+      include section/_stock
+      include section/order
+    include includes/footer

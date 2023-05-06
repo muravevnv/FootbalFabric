@@ -64,7 +64,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 30.5px;
+    padding: 24px;
 
     @include media(lg) {
       padding: 24px;
@@ -127,7 +127,7 @@
 
   &__title {
     font-size: 36px;
-    line-height: 1;
+    line-height: 1.17;
     font-weight: 700;
     margin-bottom: 16px;
     

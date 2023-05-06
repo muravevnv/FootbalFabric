@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title Акции
+  body 
+    include includes/mixins
+    include includes/header
+    main
+      .contacts 
+        .container 
+          h1.contacts__title НАШИ КОНТАКТЫ
+          .contacts-main
+            .contacts-left 
+              form(action="#").contacts-form 
+                .contacts-form__desc Заполните форму, и наш специалист свяжется с Вами для подтверждения заказа:
+                .form-row 
+                  .form-item 
+                    label.form__label
+                    input.form__input(type="text" placeholder="Ваше имя...")
+                  .form-item 
+                    label.form__label
+                    input.form__input(type="text" placeholder="+7 (___) ___-__-__")
+                .form-item 
+                  label.form__label
+                  textarea.form__textarea(name="", cols="30", rows="3") 
+                .form__btn.btn Отправить!
+                .form__aproove Нажимая на кнопку «Отправить!», вы даёте согласие на обработку <span>персональных данных</span> и соглашаетесь с <a href="#">Политикой конфиденциальности</a>
+            .contacts-right 
+              .contacts-item
+                  +svgSprite('phone', 24, 24)
+                  span +7 (812) 322-6-555
+              .contacts-item
+                +svgSprite('mail', 24, 24)
+                span info@ff.ru.net
+              .contacts-item.contacts-item--adress
+                +svgSprite('map-pin', 24, 24)
+                span 192102, Санкт-Петербург, ул. Софийская, д.14 <br> Спортивный центр “Фабрика Футбола”
+          .contacts-map 
+            .contacts-map-wrap
+              iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa4ecabb20204c7c09eb3cb904714f43e79e8751d180c51c86bb3665301b0ed35&amp;source=constructor" width="100%" height="482" frameborder="0")
+    include includes/footer

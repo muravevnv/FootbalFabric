@@ -1,26 +1,38 @@
-
--
-  var stockItems = [
-    {
-      idx: 1,
-      title: 'Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки'
-    },
-    {
-      idx: 1,
-      title: 'Утро на "Фабрике Футбола" - гарантия отличного дня!'
-    },
-    {
-      idx: 1,
-      title: 'Не проспи все праздники - приходи играть на "ФАБРИКУ" текст длин...'
-    },
-  ]
-
-.stock-list 
-  each item in stockItems
-    .stock-item 
-      .stock-item__img 
-        img(src="images/stock/stock-img.png", alt="")
-      a(href="#").stock-item__title= item.title 
-      .stock-item__bottom
-        .stock-item__icon
-          +svgSprite('arrow-black', 15, 15)
+section.section.special 
+  .container 
+    .special-content 
+      .special__subtitle Специальное предложение
+      h2.special__title «Все включено!» 
+      .special-items 
+        .special-item 
+          .special-item__img 
+            img(src="images/special/special-1.png", alt="")
+          .special-item__info
+            .special-item__hour 1 час
+            .special-item__title Аренда футбольного поля 20х40 м для игры в футбол
+        .special-item 
+          .special-item__img 
+            img(src="images/special/special-2.png", alt="")
+          .special-item__info
+            .special-item__hour 1 час
+            .special-item__title Ведущий-аниматор со специальной спортивно-праздничной программой
+        .special-item 
+          .special-item__img 
+            img(src="images/special/special-3.png", alt="")
+          .special-item__info
+            .special-item__hour 1 час
+            .special-item__title Необходимый инвентарь для игры
+        .special-item 
+          .special-item__img 
+            img(src="images/special/special-4.png", alt="")
+          .special-item__info
+            .special-item__hour 1 час
+            .special-item__title Место на балконе в зоне кафе для размещения гостей и организации праздника
+      .special-bottom 
+        .special-total 
+          .special-total__price 
+            .price 9 990 ₽*
+            .old-price 12 990 ₽
+          .special-total__btn.btn Заказать праздник!
+        .special-bottom__text *Стоимость актуальна при количестве детей <span>до 15 человек.</span> <br>
+          | Дополнительные услуги оплачиваются отдельно

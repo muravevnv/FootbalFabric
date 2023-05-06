@@ -15,10 +15,34 @@
     position: relative;
     margin-bottom: 10px;
 
-    &._error {
+    &::before {
+      position: absolute;
+      content: '';
+      right: 16px;
+      top: 50%;
+      width: 13px;
+      height: 13px; 
+      background: url('../images/cross-error.svg') center center / 13px no-repeat;
+      transform: translateY(-50%);
+      opacity: 0;
+    }
 
-      .form__error {
+    &.is-active {
+      
+      .form__input {
+        background-color: var(--color-white);
+        border-color: #E9F5DF;
+      }
+    }
+
+    &.is-error {
+      position: relative;
+      &::before {
         opacity: 1;
+      }
+
+      .form__input {
+        border-color: var(--color-orange);
       }
     }
   }
@@ -33,16 +57,39 @@
     line-height: 1;
     padding: 17px 15px;
     outline: none;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
 
     &:focus {
-      + .form__label {
-        bottom: 52px;
+      background-color: var(--color-white);
+      border-color: var(--color-green);
+
+      &::placeholder {
+        display: none;
+        opacity: 0;
       }
     }
+  }
 
-    &:valid {
-      + .form__label {
-        bottom: 52px;
+  &__textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background: #F9F9F9;
+    border: 1px solid #E4E4E7;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 17px 15px;
+    outline: none;
+
+    &:focus {
+      background-color: var(--color-white);
+      border-color: var(--color-green);
+
+      &::placeholder {
+        display: none;
+        opacity: 0;
       }
     }
   }
@@ -74,6 +121,21 @@
 
   &__label {
     display: none;
+  }
+
+  &__aproove {
+    max-width: 400px;
+    margin-top: 16px;
+    font-size: 11px;
+    line-height: 1.45;
+
+    a {
+      color: var(--color-primary);
+    }
+
+    span {
+      color: var(--color-primary);
+    }
   }
 
   &-section {
