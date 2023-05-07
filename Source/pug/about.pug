@@ -1,0 +1,43 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/main.css")
+    title О нас
+  body 
+    include includes/mixins
+    include includes/header
+    main
+      .about 
+        .container
+          h1.about__title О «ФабриКЕ футбола»
+          .about-video 
+            .about-video__item
+              iframe(width="100%" height="358" src="https://www.youtube.com/embed/dptFCFbZRRE" title="«Фабрика футбола» на Общественной акции «Выбираю спорт!»" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+            .about-video__item 
+              iframe(width="100%" height="358" src="https://www.youtube.com/embed/YI8-T8Hyy5Q" title="День Рождения &quot;Фабрики Футбола&quot; - 2 года!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen)
+          .about-info 
+            .about-info__title Объединяем людей, любящих футбол, с 2015 года!
+            .about-info__text 
+              p «Фабрика футбола» появилась в 2015 году как организация, объединяющая людей, влюбленных в футбол. При создании комплекса, мы постарались учесть все нюансы для того чтобы гости чувствовали себя комфортно. Наша цель заключается в том, чтобы людей с активной жизненной позицией становилось больше, поэтому мы продолжаем стремиться к улучшениям, и поэтому наши поля предназначены не только для классического футбола. 
+              p «Фабрика футбола» – это спортивный комплекс комфорт-класса, расположенный на юге Санкт-Петербурга. Мы знаем, что спорт– это важная составляющая жизни современных людей. Поэтому при создании нашего спортивного комплекса мы постарались создать идеальные условия, чтобы игра в футбол, а также другие виды спорта превратились в приятный отдых и повод для встречи.\
+          .about-nums 
+            .about-nums__item 
+              | 6
+              span ПОЛЕЙ
+            .about-nums__item 
+              | 325
+              span КОРПОРАТИВНЫХ КЛИЕНТОВ
+            .about-nums__item 
+              | 14
+              span услуг
+            .about-nums__item 
+              | 5
+              span лет на рынке
+      include section/_facilities
+      include section/_gallery
+      include section/order
+    include includes/footer

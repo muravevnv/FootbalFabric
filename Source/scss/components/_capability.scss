@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     gap: 72px;
-    padding: 0 36px;
 
     @include media(lg) {
       gap: 32px;
