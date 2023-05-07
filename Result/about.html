@@ -10,27 +10,47 @@
   </head>
   <body> 
     <header class="header">
-      <div class="container"> <a class="header__logo" href="#"><img src="images/logo.svg" alt="ФФ"></a>
-        <nav class="header-nav"> 
-          <ul class="header-nav__list"> 
-            <li class="header-nav__item active"> <a href="#" data-text="Главная"> <span>Главная</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="Аренда"> <span>Аренда</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="Услуги"> <span>Услуги</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="Цены"> <span>Цены</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="Акции"> <span>Акции</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="Новости"> <span>Новости</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="О нас"> <span>О нас</span></a></li>
-            <li class="header-nav__item"> <a href="#" data-text="Контакты"> <span>Контакты</span></a></li>
-          </ul>
-        </nav><a class="header__tel" href="#">+7 (812) 322-6-555</a>
-        <div class="header-action"> <a class="header__social socials-item" href="#"> 
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#tg"></use>
-                </svg></a><a class="header__social socials-item" href="#"> 
-                <svg width="16" height="16">
-                  <use xlink:href="images/sprite.svg#vk"></use>
-                </svg></a><a class="header__link btn btn--border" href="#">Заказать звонок</a></div>
-        <div class="header__burger js-burger"> <span></span><span></span><span></span></div>
+      <div class="container"> 
+        <div class="header__burger js-burger"> <span></span><span></span><span></span></div><a class="header__logo" href="#"><img src="images/logo.svg" alt="#"></a>
+        <div class="header-menu js-menu">
+          <div class="header-menu__overlay"> </div>
+          <nav class="header-nav">
+            <ul class="header-nav__list"> 
+              <li class="header-nav__item active"> <a href="#" data-text="Главная"> <span>Главная</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="Аренда"> <span>Аренда</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="Услуги"> <span>Услуги</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="Цены"> <span>Цены</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="Акции"> <span>Акции</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="Новости"> <span>Новости</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="О нас"> <span>О нас</span></a></li>
+              <li class="header-nav__item"> <a href="#" data-text="Контакты"> <span>Контакты</span></a></li>
+            </ul>
+            <div class="header-menu__tel">+7 (812) 322-6-555</div>
+            <div class="header-menu__socials socials">
+              <div class="socials-item">
+                    <svg width="18" height="18">
+                      <use xlink:href="images/sprite.svg#tg"></use>
+                    </svg>
+              </div>
+              <div class="socials-item">
+                    <svg width="18" height="18">
+                      <use xlink:href="images/sprite.svg#vk"></use>
+                    </svg>
+              </div>
+              <div class="socials-item">
+                    <svg width="18" height="18">
+                      <use xlink:href="images/sprite.svg#tel"></use>
+                    </svg>
+              </div>
+            </div>
+          </nav>
+        </div><a class="header__tel" href="#">+7 (812) 322-6-555</a><a class="header__tg socials-item" href="#"> 
+              <svg width="16" height="16">
+                <use xlink:href="images/sprite.svg#tg"></use>
+              </svg></a><a class="header__vk socials-item" href="#"> 
+              <svg width="16" height="16">
+                <use xlink:href="images/sprite.svg#vk"></use>
+              </svg></a><a class="header__call" href="#">Заказать звонок</a>
       </div>
     </header>
     <main>
