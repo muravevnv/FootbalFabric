@@ -6,10 +6,18 @@
   }
 
   &-wrapper {
-    padding: 20px;
+    padding: 24px;
     background-color: var(--color-white);
     border-radius: 60px;
     box-shadow: 0px 4px 40px rgba(11, 12, 13, 0.05);
+
+    @include media(lg) {
+      padding: 16px;
+    }
+
+    @include media(md) {
+      padding: 24px;
+    }
 
     @include media(sm) {
       padding: 16px;
@@ -158,6 +166,10 @@
   &__text {
     margin-bottom: 20px;
 
+    @include media(lg) {
+      margin-bottom: 16px;
+    }
+
     @include media(sm)  {
       margin-bottom: 16px;
     }
@@ -170,8 +182,8 @@
 
     margin-bottom: 36px;
 
-    @include media(sm)  {
-      margin-bottom: 24px;
+    @include media(lg) {
+      margin-bottom: 16px;
     }
 
     &__item {

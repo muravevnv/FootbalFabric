@@ -1,7 +1,11 @@
 .footer {
   background-color: var(--color-dark);
   color: var(--color-white);
-  padding: 48px 0 24px;
+  padding: 48px;
+
+  @include media(sm) {
+    padding: 36px 0;
+  }
 
   &__logo {
     max-width: 213px;
@@ -42,16 +46,18 @@
       svg {
         display: block;
         margin-bottom: 16px;
+        color: var(--color-primary);
       }
 
       > a {
         color: var(--color-green);
         text-decoration: underline;
         margin-top: 16px;
-
+        
         &:hover {
           text-decoration: none;
         }
+
       }
     }
   }
@@ -64,15 +70,31 @@
     gap: 24px;
 
     @include media(sm) {
-      grid-template-columns: 1fr 1fr;
-      padding: 32px 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
     }
+  }
+
+  &-bottom {
+    padding: 24px 0;
+  }
+
+  &__company {
+    width: 100%;
+    margin-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: #E4EBFB;
   }
 
   &-socials {
     display: flex;
     justify-content: center;
-    padding: 24px 0 0 0;
+
     gap: 24px;
   }
 
@@ -80,20 +102,14 @@
     font-size: 15px;
     line-height: 17px;
 
-    @include media(sm) {
-
-      &:nth-of-type(4) {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-      } 
-      &:nth-of-type(3) {
-        padding-top: 41px;
-      } 
-    }
-
     &__title {
       font-weight: 700;
       margin-bottom: 24px;
+
+      @include media(sm) {
+        font-size: 18px;
+        line-height: 24px;
+      }
     }
 
     &__item {
@@ -111,6 +127,9 @@
       
       > a {
         position: relative;
+        color: #EAEAEA;
+
+
 
         &::before {
           position: absolute;
@@ -131,6 +150,11 @@
             opacity: 1;
             transition: .3s;
           }
+        }
+
+        @include media(sm) {
+          font-size: 18px;
+          line-height: 24px;
         }
       }
     }
