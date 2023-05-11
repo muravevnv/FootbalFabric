@@ -4,7 +4,8 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Document
+    link(rel="stylesheet", href="css/main.css")
+    title 404
   body 
     include includes/mixins
     include includes/header
@@ -13,16 +14,18 @@ html(lang="en")
         .container 
           .not-found-wrap 
             .not-found__status 404
-            .font-found__subtitle Ничего не найдено...
-            .not-found__expamples
-              .not-found__expamples-title Возможно, вы искали:
-              .not-found__expamples-list 
-              .not-found__example Аренда полей
-              .not-found__example Услуги
-              .not-found__example Школа футбола
-              .not-found__example  Нёрфинг
-              .not-found__example Бампербол
-              .not-found__example Турниры
-              .not-found__example Корпоративный спорт
-            .not-found__btn.btn На главную
+            .not-found__subtitle Ничего не найдено...
+            .not-found__examples
+              .not-found__examples-title Возможно, вы искали:
+              .not-found__examples-list 
+                .not-found__example Аренда полей
+                .not-found__example Услуги
+                .not-found__example Школа футбола
+                .not-found__example  Нёрфинг
+                .not-found__example Бампербол
+                .not-found__example Турниры
+                .not-found__example Корпоративный спорт
+            .not-found__btn.btn.btn--icon На главную
+              .icon 
+                +svgSprite('arrow-black', 16, 16)
     include includes/footer

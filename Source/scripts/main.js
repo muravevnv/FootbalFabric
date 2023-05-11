@@ -18,9 +18,54 @@ document.addEventListener("DOMContentLoaded", function () {
       return
     }
   })
-
-
 });
+
+let fields = document.querySelectorAll('.field');
+let popups = document.querySelectorAll('.popup');
+let body = document.querySelector('body')
+console.log(fields)
+
+fields.forEach(function(item){
+  let itemField = item.dataset.field;
+  let popupField = document.querySelector(`.popup[data-field="${itemField}"]`);
+  console.log(itemField)
+
+  item.addEventListener('click', function(){
+    popupField.classList.add('active');
+    body.classList.add('no-scroll')
+  })
+
+  let popupOverlay = popupField.querySelector('.popup-overlay');
+  console.log(popupOverlay)
+  popupOverlay.addEventListener('click', function(){
+    popupField.classList.remove('active');
+    body.classList.remove('no-scroll')
+  })
+})
+
+
+let schemeFilter = document.querySelectorAll('.js-filter-lvl');
+let schemeLvl = document.querySelectorAll('.js-map-lvl');
+
+schemeFilter.forEach(function(item) {
+
+  let dataMap = item.dataset.map;
+  console.log(dataMap)
+  let scheme = document.querySelector(`.js-map-lvl[data-map="${dataMap}"`)
+  console.log(scheme)
+
+  item.addEventListener('click', function(){
+    schemeFilter.forEach(function(e){
+      e.classList.remove('is-selected')
+    })
+    schemeLvl.forEach(function(e){
+      e.classList.remove('is-selected')
+    })
+    item.classList.add('is-selected');
+    scheme.classList.add('is-selected');
+  })
+})
+
 
 const heroSlider = new Swiper(".js-hero-slider", {
   slidesPerView: 1,

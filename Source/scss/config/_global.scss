@@ -14,10 +14,8 @@ body {
   height: 100%;
 }
 
-body.noscroll {
-  position: fixed;
-  left: 0;
-  right: 0;
+body.no-scroll {
+  overflow: hidden;
 }
 
 body {
@@ -145,9 +143,17 @@ select {
   }
 }
 
-svg {
+.icon-svg {
   display: block;
   fill: currentColor;
   stroke: currentColor;
   stroke-width: 0;
+}
+
+.bg-sand {
+  background-color: #EABA40 !important;
+}
+
+.bg-green {
+  background-color: var(--color-primary) !important;
 }
