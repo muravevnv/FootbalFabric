@@ -1,5 +1,14 @@
 .scheme {
 
+  .section-head {
+    text-align: center;
+    justify-content: center;
+  }
+  .section__title {
+    text-align: center;
+    color: var(--color-dark);
+  }
+
   &-map {
 
     svg {

@@ -74,7 +74,7 @@
       line-height: .8;
       font-weight: 700;
       margin-bottom: 8px;
-      color: var(--color-secondary);
+      color: var(--color-green);
 
       @include media(sm)  {
         font-size: 32px;
@@ -85,6 +85,8 @@
       max-width: 155px;
       margin: 0 auto;
       letter-spacing: 0.1rem;
+      font-family: 'Manrope';
+      font-weight: 400;
 
       @include media(sm)  {
         font-size: 14px;

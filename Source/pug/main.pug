@@ -16,21 +16,11 @@ html(lang="en")
         .container 
           .section-head 
             h2.section__title КАКУЮ ИГРУ ПРЕДПОЧИТАЕТЕ?
-            .section__link.link-more
-              span Все услуги
-              <svg class="img" width="13.8" height="13.8">
-                <use xlink:href="images/sprite.svg#arrow-green"></use>
-              </svg>
           include section/game-list
       section.section
         .container 
           .section-head 
             h2.section__title ЕЩЕ БОЛьШЕ ВОЗмОЖНОСТЕЙ!
-            .section__link.link-more
-              span Все услуги
-              <svg class="img" width="13.8" height="13.8">
-                <use xlink:href="images/sprite.svg#arrow-green"></use>
-              </svg>
           include section/possibility-list
       include section/_scheme
       include section/application
@@ -42,20 +32,13 @@ html(lang="en")
               span Все услуги
               +svgSprite('arrow-green', 13, 13)
           include section/events
-      section.section.stock
-        .container 
-          .section-head 
-            h2.section__title Специальные предложения
-            .section__link.link-more
-              span Все услуги
-              +svgSprite('arrow-green', 13, 13)
-          include section/_stock
+      include section/_stock
       section.section
         .container 
           .section-head 
             h2.section__title о комплексе
-            .section__link.link-more
-              span Все услуги
+            a(href="/about.html").section__link.link-more
+              span Подробнее
               +svgSprite('arrow-green', 13, 13)
           include section/complex
       include section/adv

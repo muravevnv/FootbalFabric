@@ -60,6 +60,12 @@
     font-size: 15px;
     line-height: 1;
     font-weight: 700;
+    font-family: 'Manrope';
+
+    &::placeholder {
+      font-weight: 400;
+      font-family: 'Manrope';
+    }
 
     &:focus {
       background-color: var(--color-white);

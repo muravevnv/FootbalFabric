@@ -39,6 +39,8 @@
 
   &__subtitle {
     text-align: center;
+    font-family: 'Manrope';
+    font-weight: 400;
   }
 
   &-head {
@@ -63,7 +65,7 @@
     }
 
     &-right {
-      .order-section {
+      .application-section {
         background: #F9F9F9;
         border-radius: 16px;
         padding: 16px;

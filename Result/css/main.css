@@ -39,6 +39,18 @@
   font-display: swap;
   src: local("Play-Bold"), url("../fonts/Play-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 *, html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -297,6 +309,27 @@ h5 {
   font-size: 15px;
   line-height: 1;
   font-weight: 700;
+  font-family: "Manrope";
+}
+.form__input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-family: "Manrope";
+}
+.form__input::-moz-placeholder {
+  font-weight: 400;
+  font-family: "Manrope";
+}
+.form__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-family: "Manrope";
+}
+.form__input::-ms-input-placeholder {
+  font-weight: 400;
+  font-family: "Manrope";
+}
+.form__input::placeholder {
+  font-weight: 400;
+  font-family: "Manrope";
 }
 .form__input:focus {
   background-color: var(--color-white);
@@ -499,6 +532,7 @@ h5 {
   border-radius: 10px;
   font-size: 12px;
   line-height: 1;
+  letter-spacing: 0.1rem;
 }
 
 .checkbox__input {
@@ -835,7 +869,7 @@ h5 {
 .footer-contacts__item svg {
   display: block;
   margin-bottom: 16px;
-  color: var(--color-primary);
+  fill: var(--color-green);
 }
 .footer-contacts__item > a {
   color: var(--color-green);
@@ -1340,6 +1374,7 @@ h5 {
   text-transform: uppercase;
   color: var(--color-white);
   border-radius: 0px 12px 12px 0px;
+  letter-spacing: 0.1rem;
 }
 .game-item__badge {
   margin-top: 5px;
@@ -1449,11 +1484,14 @@ h5 {
 }
 .possibility-item__img {
   overflow: hidden;
-  border-radius: 36px;
   margin-bottom: 20px;
 }
 .possibility-item__img img {
   width: 100%;
+  border-radius: 26px;
+}
+.possibility-item__info {
+  padding: 0 10px;
 }
 .possibility-item__title {
   font-size: 24px;
@@ -1466,6 +1504,8 @@ h5 {
   line-height: 1.35;
   max-width: 320px;
   color: var(--color-gray);
+  font-family: "Manrope";
+  font-weight: 300;
 }
 
 .application-wrapper {
@@ -1488,6 +1528,8 @@ h5 {
 }
 .application__subtitle {
   text-align: center;
+  font-family: "Manrope";
+  font-weight: 400;
 }
 .application-head {
   margin-bottom: 36px;
@@ -1501,7 +1543,7 @@ h5 {
 .application-form-left, .application-form-right {
   width: 100%;
 }
-.application-form-right .order-section {
+.application-form-right .application-section {
   background: #F9F9F9;
   border-radius: 16px;
   padding: 16px;
@@ -1589,6 +1631,10 @@ h5 {
 .order__subtitle {
   text-align: center;
   margin-bottom: 24px;
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-dark);
 }
 
 .complex-desc {
@@ -1643,12 +1689,14 @@ h5 {
   line-height: 0.8;
   font-weight: 700;
   margin-bottom: 8px;
-  color: var(--color-secondary);
+  color: var(--color-green);
 }
 .complex-info__text {
   max-width: 155px;
   margin: 0 auto;
   letter-spacing: 0.1rem;
+  font-family: "Manrope";
+  font-weight: 400;
 }
 
 .adv-item {
@@ -1700,6 +1748,8 @@ h5 {
   font-size: 14px;
   line-height: 1.25;
   color: var(--color-gray);
+  font-family: "Manrope";
+  font-weight: 300;
 }
 
 .advantages-info {
@@ -1838,11 +1888,6 @@ h5 {
   -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
-}
-.stock-item:hover {
-  border-radius: 40px 40px 0 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 .stock-item__img {
   border-radius: 36px;
@@ -2961,6 +3006,16 @@ h5 {
   font-weight: 400;
 }
 
+.scheme .section-head {
+  text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.scheme .section__title {
+  text-align: center;
+  color: var(--color-dark);
+}
 .scheme-map svg {
   width: 100%;
   height: 100%;
