@@ -269,6 +269,24 @@ h5 {
   display: flex;
   gap: 10px;
 }
+.form__error {
+  display: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--color-orange);
+  margin-top: 8px;
+  padding-left: 37px;
+  position: relative;
+}
+.form__error::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 13px;
+  left: 16px;
+  top: 1px;
+  background: url("../images/alert-circle.svg") center center/13px no-repeat;
+}
 .form-item {
   width: 100%;
   position: relative;
@@ -278,12 +296,10 @@ h5 {
   position: absolute;
   content: "";
   right: 16px;
-  top: 50%;
+  top: 28px;
   width: 13px;
   height: 13px;
   background: url("../images/cross-error.svg") center center/13px no-repeat;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   opacity: 0;
 }
 .form-item.is-active .form__input {
@@ -295,6 +311,9 @@ h5 {
 }
 .form-item.is-error::before {
   opacity: 1;
+}
+.form-item.is-error .form__error {
+  display: block;
 }
 .form-item.is-error .form__input {
   border-color: var(--color-orange);
@@ -424,6 +443,7 @@ h5 {
   margin-top: 16px;
   font-size: 11px;
   line-height: 1.45;
+  font-family: "Manrope";
 }
 .form__aproove a {
   color: var(--color-primary);
