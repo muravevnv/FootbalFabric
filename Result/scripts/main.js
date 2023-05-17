@@ -216,3 +216,26 @@ const stockSlider = new Swiper(".js-stock-slider", {
     },
   },
 });
+
+
+const inputTel = document.querySelectorAll('.js-input-tel');
+
+inputTel.forEach(function(item) {
+
+  let mask = IMask(item, {
+    mask: '+{7}(000)000-00-00'
+  });
+})
+
+
+const selects = document.querySelectorAll('.js-select');
+
+  
+  selects.forEach(function(item) {
+    let itemName = item.dataset.name;
+    console.log(itemName);
+      
+  NiceSelect.bind(item, {
+    placeholder: itemName
+  })
+  })

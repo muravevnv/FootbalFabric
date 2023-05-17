@@ -58,6 +58,20 @@
       background: #F9F9F9;
       border-radius: 36px 0px 0px 0px;
       padding: 16px;
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        background-color: #66B821;
+        color: var(--color-white);
+        transition: .2s;
+      }
+  
+      &:active {
+        background-color: #55991B;
+        color: var(--color-white);
+        transition: .2s;
+      }
     }
 
     &__icon {

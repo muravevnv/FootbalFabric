@@ -120,6 +120,20 @@
       font-weight: 700;
       font-size: 17px;
       margin: auto -32px -12px 0;
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        background-color: #66B821;
+        color: var(--color-white);
+        transition: .2s;
+      }
+  
+      &:active {
+        background-color: #55991B;
+        color: var(--color-white);
+        transition: .2s;
+      }
     }
 
     &__link {

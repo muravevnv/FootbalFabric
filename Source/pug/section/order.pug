@@ -8,13 +8,13 @@ section.order.section
         .order__subtitle Заполните форму, и наш специалист свяжется с Вами для подтверждения заказа:
         form.order-form(action="#")
           .form-item 
-            input.form__input(type="text")
+            input.form__input(type="text" placeholder="Имя")
             label.form__label(for="")  
           .form-item 
-            input.form__input(type="text")
+            input.form__input(type="text" placeholder="Фамилия")
             label.form__label(for="")  
           .form-item 
-            input.form__input(type="text")
+            input.form__input(type="text" class="js-input-tel" placeholder="+7 (___) ___-__-__")
             label.form__label(for="")  
           button.form__btn.btn Отправить!
           .form__text Нажимая на кнопку «Отправить!», вы даёте согласие на обработку 

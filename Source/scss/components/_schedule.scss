@@ -35,7 +35,6 @@
     border-radius: 24px;
     background-color: var(--color-white);
     gap: 8px;
-    overflow-y: auto;
 
     &::-webkit-scrollbar {
       display: none;
@@ -46,8 +45,8 @@
     }
 
     @include media(xs) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      flex-direction: column;
       width: 100%;
     }
   }
@@ -61,10 +60,17 @@
     border-radius: 16px;
 
     @include media(sm) {
-      border-radius: 8px;
+      border-radius: 16px;
+      min-width: 40px;
     }
+    
 
     @include media(xs) {
+      display: flex;
+      align-items: flex-start;
+      min-height: 38px;
+      gap: 16px;
+      padding: 10px 24px;
       &:last-of-type {
         grid-column: span 2;
       }
@@ -74,8 +80,9 @@
     &.active {
       min-width: 145px;
       background: #e9f5df;
+      
 
-      @include media(xs)  {
+      @include media(md)  {
         min-width: initial;
       }
     }

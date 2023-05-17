@@ -43,6 +43,20 @@
     border-radius: 36px 0px 0px 0px;
     gap: 15px;
     margin: 0 -12px -12px 0;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #66B821;
+      color: var(--color-white);
+      transition: .2s;
+    }
+
+    &:active {
+      background-color: #55991B;
+      color: var(--color-white);
+      transition: .2s;
+    }
   }
 
   &__price {

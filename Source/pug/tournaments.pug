@@ -5,6 +5,7 @@ html(lang="en")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/swiper-bundle.css")
+    link(rel="stylesheet", href="css/select2.min.css")
     link(rel="stylesheet", href="css/main.css")
     title Главная
   body 
@@ -36,7 +37,15 @@ html(lang="en")
       include section/_tournaments-list
       include section/_event
       include section/_gallery
-      include section/_advantages
+      section.section.advantages
+        .container
+          .section-head 
+            h2.section__title Наши преимущества
+          .advantages-info.desc-content 
+            .desc__title Все по-взрослому! Совсем не детский футбол
+            .desc__text 
+              p В нашем центре есть все необходимое для полноценной игры: раздевалки, душевые, спортивный инвентарь, услуги тренера, арбитра, медкабинет, зона разминки. Теперь вы точно знаете, где отметить День Рождения!
+          include section/_advantages
       include section/_additional-services
       section.section
         .container 

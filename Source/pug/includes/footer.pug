@@ -6,10 +6,17 @@ footer.footer
       a(href="mailto:info@ff.ru.net").footer-contacts__item 
         +svgSprite('mail', 16, 16)
         span info@ff.ru.net
-      .footer-contacts__item 
+      .footer-contacts__item
         +svgSprite('map', 16, 16)
         span 192102, Санкт-Петербург, ул. Софийская, д.14 Спортивный центр «Фабрика Футбола»
-        a(href="#") Как добраться?
+        div(class="footer-foutes js-routes-btn") Как добраться?
+          .popup-routes.js-routes-popup
+            .popup-routes-head 
+              .popup-routes__title МАРШРУТЫ 
+              .popup-routes__num 12
+              .popup-routes__num 31
+              .popup-routes__num К253 
+            .popup-routes__text От станции метро <span>«Международная»</span> до остановки «Софийская/Белы Куна». Навигационные знаки от остановки помогут вам быстро найти «Фабрику Футбола» .
       a(href="tel:+7 (812) 322-6-555").footer-contacts__item 
         +svgSprite('tel', 16, 16)
         span +7 (812) 322-6-555
@@ -67,6 +74,7 @@ footer.footer
            +svgSprite('vk', 18, 18)
       .footer__company  2023. Фабрика Футбола. Все права защищены
 
-
 script(src="scripts/swiper-bundle.min.js") 
+script(src="scripts/select2.js") 
+script(src="scripts/imask.js") 
 script(src="scripts/main.js") 

@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: .2s;
 
   svg {
     fill: var(--color-white);
@@ -13,6 +14,7 @@
 
   &:hover {
     background-color: var(--color-green);
+    transition: .2s;
 
     svg {
       fill: var(--color-dark);

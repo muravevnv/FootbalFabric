@@ -126,6 +126,7 @@ select {
   font-weight: 700;
   border-radius: 16px;
   cursor: pointer;
+  transition: .2s;
 
   svg {
     width: 13px;
@@ -136,6 +137,7 @@ select {
   &:hover {
     background-color: var(--color-primary);
     color: var(--color-white);
+    transition: .2s;
 
     svg {
       fill: var(--color-white);

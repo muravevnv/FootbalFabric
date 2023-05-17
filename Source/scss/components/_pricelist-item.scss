@@ -7,6 +7,14 @@
 
   &__doc {
     box-shadow: 0px 4px 40px rgba(11, 12, 13, 0.05);
+    padding: 4px 4px 4px 16px;
+    color: var(--dark);
+
+    svg {
+      width: 36px;
+      height: 36px;
+      
+    }
   }
 
   &-row {
@@ -62,11 +70,29 @@
       }
     }
 
+    &__info {
+      font-size: 18px;
+      line-height: 1;
+      font-weight: 700;
+      width: 55%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      @include media(md){
+        flex-wrap: wrap;
+        gap: 10px 8px;
+      }
+    }
+
     &__name {
       font-size: 18px;
       line-height: 1;
       font-weight: 700;
-      width: 50%;
+
+      @include media(md) {
+        width: 100%;
+      }
 
       @include media(sm) {
         font-size: 20px;
@@ -75,11 +101,13 @@
 
     &__time {
       font-size: 15px;
+      text-transform: uppercase;
+      color: var(--color-gray);
       line-height: 1;
-      width: 20%;
       text-align: center;
-
-
+      font-weight: 400;
+      flex-shrink: 0;
+      white-space: nowrap;
     }
 
     &__badge {
@@ -90,6 +118,16 @@
       color: var(--color-white);
       background-color: var(--color-yellow);
       border-radius: 7px;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      &.bg-green {
+        background-color: var(--color-green);
+      }
+      &.bg-yellow {
+        background-color: var(--color-yellow);
+      }
     }
 
     &__hour {
@@ -114,7 +152,7 @@
       font-size: 20px;
       line-height: 1;
       color: var(--color-gray);
-      width: 30%;
+      width: 20%;
       text-align: right;
 
       @include media(sm) {

@@ -11,18 +11,26 @@ section.section.application
               .application-section__title Данные игры
               .form-row 
                 .form-item 
-                  label.form__label(for="") 
-                  input.form__input(type="text" placeholder="Выберите время")
+                  select.js-select(name="" data-name="Выберите поле") 
+                    option(value="1") Поле 1 (трава)
+                    option(value="2") Поле 2 (песок)
+                    option(value="3") Поле 3 (покрытие)
                 .form-item 
-                  label.form__label(for="") 
-                  input.form__input(type="text" placeholder="Выберите время")
+                  select.js-select(name="" data-name="Выберите дату") 
+                    option(value="1") 16 мая 2023
+                    option(value="2") 17 мая 2023
+                    option(value="3") 18 мая 2023
               .form-row 
                 .form-item 
-                  label.form__label(for="") 
-                  input.form__input(type="text" placeholder="Продолжительность игры...")
+                  select.js-select(name="" data-name="Выберите время") 
+                    option(value="1") 12:00
+                    option(value="2") 13:00
+                    option(value="3") 14:00
                 .form-item 
-                  label.form__label(for="") 
-                  input.form__input(type="text" placeholder="Продолжительность игры...")
+                  select.js-select(name="" data-name="Продолжительность ") 
+                    option(value="1") 1 час
+                    option(value="2") 2 часа
+                    option(value="3") 3 часа
             .application-section 
               .application-section__title Ваши данные
               .form-item 
@@ -30,7 +38,7 @@ section.section.application
                 input.form__input(type="text" placeholder="Ваше имя")
               .form-item 
                 label.form__label(for="") 
-                input.form__input(type="text" placeholder="+7 (___) ___-__-__")
+                input.form__input(type="text" class="js-input-tel" placeholder="+7 (___) ___-__-__")
           .application-form-right  
             .application-section 
               .application-section__title Дополнительные услуги
