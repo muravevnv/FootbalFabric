@@ -44,11 +44,13 @@
 
 
 
-.advantages-list 
-  each item in advantagesItems
-    .advantages-item 
-      .advantages-item__img 
-        img(src=`images/advantages/advantages-${item.img}.png`, alt="")
-      .advantages-item__info 
-        .advantages-item__title= item.title
-        .advantages-item__text= item.text
+.advantages-list.js-advantages-slider
+  .swiper-wrapper
+    each item in advantagesItems
+      .advantages-item.swiper-slide 
+        .advantages-item__img 
+          img(src=`images/advantages/advantages-${item.img}.png`, alt="")
+        .advantages-item__info 
+          .advantages-item__title= item.title
+          .advantages-item__text= item.text
+  .swiper-pagination

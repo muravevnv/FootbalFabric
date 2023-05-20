@@ -11,27 +11,17 @@ html(lang="en")
   body 
     include includes/mixins
     include includes/header
-    main 
+    main.rent
+      section.section
+        .container  
+          h1.rent__title Выбрать поле по виду спорта
+          include section/game-list
       section.section
         .container 
           .section-head 
-            h2.section__title Выбрать поле по виду спорта
-            .section__link.link-more
-              span Все услуги
-              <svg class="img" width="13.8" height="13.8">
-                <use xlink:href="images/sprite.svg#arrow-green"></use>
-              </svg>
-          include section/game-list
-      section.section.rent
-        .container 
-          .section-head 
             h2.section__title АРЕНДА ИГРОВЫХ ПОЛЕЙ
-            .section__link.link-more
-              span Все услуги
-              <svg class="img" width="13.8" height="13.8">
-                <use xlink:href="images/sprite.svg#arrow-green"></use>
-              </svg>
           include section/_rent
+      include section/_scheme
       include section/application
       include section/order
     include includes/footer

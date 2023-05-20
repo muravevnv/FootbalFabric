@@ -238,4 +238,26 @@ const selects = document.querySelectorAll('.js-select');
   NiceSelect.bind(item, {
     placeholder: itemName
   })
-  })
+})
+
+
+const advantagesSlider = new Swiper(".js-advantages-slider", {
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  allowTouchMove: false,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+  breakpoints: {
+    0: {
+      allowTouchMove: true,
+    },
+    768: {
+      allowTouchMove: false,
+    }
+  }
+});
