@@ -13,6 +13,11 @@ html(lang="en")
     include section/_desc
     include includes/header
     main 
+      .breadcrumbs 
+        .container 
+          .breadcrumbs-list 
+            a.breadcrumbs__item(href="#") Услуги
+            a.breadcrumbs__item(href="#") Нерфинг
       section.hero 
         .container 
           .hero-wrapper 
@@ -20,6 +25,11 @@ html(lang="en")
               .hero-info 
                 .hero__subtitle нёрфинг
                 .hero__title Нёрфинг — командная игра с бластерами Nerf Rival
+                 .hero__tags.tags 
+                  .tag Командные игры
+                  .tag Детям и взрослым
+                  .tag Праздники и корпоративы
+                  .tag Школа футбола
                 .hero-services 
                   .hero-services__item 
                     span 3-15
@@ -60,7 +70,7 @@ html(lang="en")
       include section/_gallery
       include section/_price
       include section/_additional-services
-      include section/order
+      
       section.section
         .container 
           .section-head 
@@ -69,4 +79,5 @@ html(lang="en")
               span Все услуги
               +svgSprite('arrow-green', 13, 13)
           include section/events
+      include section/order
     include includes/footer

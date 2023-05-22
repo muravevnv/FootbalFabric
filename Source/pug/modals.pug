@@ -1,4 +1,3 @@
-doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
@@ -7,18 +6,15 @@ html(lang="en")
     link(rel="stylesheet", href="css/swiper-bundle.css")
     link(rel="stylesheet", href="css/select2.min.css")
     link(rel="stylesheet", href="css/main.css")
-    title Акции
+    title Главная
   body 
     include includes/mixins
+    include section/_desc
     include includes/header
-    main
-      .page.stocks 
-        .container
-          .page-head 
-            h1.page__title Акции «ФабрикИ футбола»
-          .stocks-filter 
-            .stocks-filter__item.active Все акции
-            .stocks-filter__item Актуальные
-            .stocks-filter__item Прошедшие
-          include section/_stock-list
+    main 
+      section.section 
+        .container 
+          .btn.js-open-modal(data-modal="1") Модальное окно 1
+          br
+          .btn.js-open-modal(data-modal="2") Модальное окно 2
     include includes/footer

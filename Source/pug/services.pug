@@ -14,8 +14,8 @@ html(lang="en")
     main
       .services
         .container 
-          .section-head 
-            h2.section__title Услуги «ФабрикИ футбола»
+          .page-head 
+            h1 Услуги «ФабрикИ футбола»
           .services-filter.filter 
             .filter-item.active Все услуги
             .filter-item Корпоративные мероприятия
@@ -93,6 +93,34 @@ html(lang="en")
                 .services-item__link
                   +svgSprite('arrow-black', 13, 13)
       include section/_additional-services
-      include section/_stock
+      section.section.stock-section 
+        .container 
+          .section-head 
+            h2.section__title СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+            .section__link.link-more 
+              span Все акции
+              +svgSprite('arrow-green', 13, 13)
+          .stock-items
+            .stock-item
+              .stock-item__img 
+                img(src="images/stock/stock-img.png", alt="")
+              a(href="#").stock-item__title Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки
+              .stock-item__bottom
+                .stock-item__icon
+                  +svgSprite('arrow-black', 15, 15)
+            .stock-item
+              .stock-item__img 
+                img(src="images/stock/stock-img.png", alt="")
+              a(href="#").stock-item__title Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки
+              .stock-item__bottom
+                .stock-item__icon
+                  +svgSprite('arrow-black', 15, 15)
+            .stock-item
+              .stock-item__img 
+                img(src="images/stock/stock-img.png", alt="")
+              a(href="#").stock-item__title Не проспи все праздники - приходи играть на «ФАБРИКУ» заголовок в три строки
+              .stock-item__bottom
+                .stock-item__icon
+                  +svgSprite('arrow-black', 15, 15)
       include section/order
     include includes/footer

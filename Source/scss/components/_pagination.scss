@@ -31,6 +31,17 @@
 
     &--prev {
       margin-right: 8px;
+
+      svg {
+        fill: #91949E;
+      }
+      &:hover {
+        background-color: #1B1D20; 
+        opacity: 1;
+        svg {
+          fill: #FFF;
+        }
+      }
     }
 
     &--next {
@@ -38,6 +49,14 @@
       
       svg {
         transform: rotate(180deg);
+        fill: #91949E;
+      }
+      &:hover {
+        background-color: #1B1D20; 
+        opacity: 1;
+        svg {
+          fill: #FFF;
+        }
       }
     }
   }

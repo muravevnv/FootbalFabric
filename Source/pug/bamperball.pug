@@ -13,6 +13,11 @@ html(lang="en")
     include section/_desc
     include includes/header
     main 
+      .breadcrumbs 
+        .container 
+          .breadcrumbs-list 
+            a.breadcrumbs__item(href="#") Услуги
+            a.breadcrumbs__item(href="#") Бампербол
       section.hero 
         .container 
           .hero-wrapper 
@@ -20,7 +25,10 @@ html(lang="en")
               .hero-info 
                 .hero__subtitle Бампербол
                 .hero__title Футбол в шарах в Санкт-Петербурге 
-                .hero__text Аренда поля для игры во флорбол в СПб
+                .hero__tags.tags 
+                  .tag Командные игры
+                  .tag Идеальный день рождения
+                  .tag Детям и взрослым
                 .hero-services 
                   .hero-services__item 
                     span 3-15

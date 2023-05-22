@@ -15,6 +15,20 @@
       height: 36px;
       
     }
+
+    &:hover {
+      background-color: #66B821;
+      color: var(--color-white);
+      border-color: #66B821;
+      transition: .2s;
+    }
+
+    &:active {
+      background-color: #55991B;
+      color: var(--color-white);
+      border-color: #55991B;
+      transition: .2s;
+    }
   }
 
   &-row {
@@ -32,13 +46,15 @@
   }
 
   &-section {
+
     &__title {
-      font-size: 15px;
+      font-size: 18px;
       text-transform: uppercase;
       font-weight: 700;
       color: var(--color-green);
       padding: 12px 0;
       margin-bottom: 24px;
+      letter-spacing: .1rem;
     }
 
     + .pricelist-section {
@@ -123,10 +139,10 @@
       font-weight: 700;
 
       &.bg-green {
-        background-color: var(--color-green);
+        background-color: var(--color-green) !important;
       }
       &.bg-yellow {
-        background-color: var(--color-yellow);
+        background-color: var(--color-yellow) !important;
       }
     }
 

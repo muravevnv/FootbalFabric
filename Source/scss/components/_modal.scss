@@ -1,0 +1,126 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  display: none;
+
+  &.is-open {
+    display: block;
+  }
+
+  &-overlay {
+    background: rgba(90, 95, 109, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+
+  &-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 632px;
+    width: 100%;
+    background-color: var(--color-white);
+    z-index: 5;
+    padding: 72px 24px;
+    box-shadow: 0px 4px 40px rgba(11, 12, 13, 0.05);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @media(max-width: 640px) {
+      width: calc(100% - 30px);
+      padding: 40px 24px;
+    }
+
+    @include media(xs) {
+      padding: 40px 16px;
+    }
+  }
+
+  &__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      height: 1px;
+      background-color: #91949E;
+      transform: translate(-50%,-50%) rotate(45deg);
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      height: 1px;
+      background-color: #91949E;
+      transform: translate(-50%,-50%) rotate(-45deg);
+    }
+
+    &:hover {
+      &::after,
+      &::before {
+        background: #0B0C0D;
+      }
+    }
+    &:active {
+      &::after,
+      &::before {
+        background: #66B821;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 24px;
+    font-size: 30px;
+    line-height: 34px;
+    font-weight: 700;
+
+    @include media(xs)  {
+      max-width: 320px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+  }
+
+  &-form {
+    max-width: 407px;
+    margin: 0 auto;
+
+    .form__text {
+      padding: 0 8px;
+      font-size: 10px;
+      line-height: 14px;
+    }
+  }
+}

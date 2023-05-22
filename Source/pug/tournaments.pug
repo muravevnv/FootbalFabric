@@ -13,6 +13,11 @@ html(lang="en")
     include section/_desc
     include includes/header
     main 
+      .breadcrumbs 
+        .container 
+          .breadcrumbs-list 
+            a.breadcrumbs__item(href="#") Услуги
+            a.breadcrumbs__item(href="#") Проведение турниров
       section.hero 
         .container 
           .hero-wrapper 
@@ -20,7 +25,10 @@ html(lang="en")
               .hero-info 
                 .hero__subtitle Проведение турниров
                 .hero__title Организация спортивных турниров и соревнований в СПб
-                  .hero__badge Паркет
+                .hero__tags.tags 
+                  .tag Командные игры
+                  .tag турниры для взрослых
+                  .tag турниры для детей
                 .hero-services 
                   .hero-services__item 
                     span 20x40 
@@ -34,6 +42,13 @@ html(lang="en")
                 .hero__btn.btn.btn--icon Организовать турнир!
               .hero-img
                 img(src="images/hero/hero-img.png", alt="") 
+      section.section.desc 
+        .container 
+          .desc-content 
+            .desc__title Мы готовы предложить вам услуги по организации турнира или корпоративного мероприятия
+            .desc__text 
+              p Футбольное мероприятие – идеально, но наш спортивный центр подойдёт и для других видов спорта, проведению спартакиад трудовых коллективов, принятию части нормативов комплекса ГТО и многого другого. И всё — под одной крышей. 
+              p Причём не только для взрослых, но и для детей: детский футбольный турнир – наш профиль. Мы проводим на регулярной основе собственные соревнования турниры и организуем турниры в Санкт-Петербурге под ключ
       include section/_tournaments-list
       include section/_event
       include section/_gallery

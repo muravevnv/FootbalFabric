@@ -12,14 +12,13 @@ html(lang="en")
     include includes/mixins
     include includes/header
     main
+      .breadcrumbs 
+        .container 
+          .breadcrumbs-list 
+            a.breadcrumbs__item(href="#") Услуги
+            a.breadcrumbs__item(href="#") Название акции
       .stock 
         .container
-          .breadcrumbs 
-            .breadcrumbs-list 
-              .breadcrumbs__item 
-                a(href="#") Акции 
-              .breadcrumbs__item 
-                a(href="#") Не проспи все праздники - приходи играть на «ФАБРИКУ»  
           .stock-wrapper 
             .stock__img 
               img(src="images/stock/stock-img-big.png", alt="")
@@ -32,6 +31,7 @@ html(lang="en")
               h2.section__title Другие предложения
               .section-link.link-more 
                 span Все услуги
+                +svgSprite('arrow-green', 15,15)
             .stock-slider.js-slider
               .swiper-wrapper 
                 .stock-item.swiper-slide

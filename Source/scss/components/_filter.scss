@@ -25,11 +25,23 @@
     cursor: pointer;
     transition: .2s;
 
-    &.active,
-    &:hover {
-      background-color: var(--color-secondary);
+    &.active {
+      background-color: #CFF446;
       color: var(--color-dark);
-      border-color: var(--color-secondary);
+      border-color: #CFF446;
+      transition: .2s;
+    }
+    &:hover {
+      background-color: #66B821;
+      color: var(--color-white);
+      border-color: #66B821;
+      transition: .2s;
+    }
+
+    &:active {
+      background-color: #55991B;
+      color: var(--color-white);
+      border-color: #55991B;
       transition: .2s;
     }
   }

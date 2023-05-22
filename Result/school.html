@@ -48,14 +48,22 @@
       </div>
     </header>
     <main> 
+      <div class="breadcrumbs"> 
+        <div class="container"> 
+          <div class="breadcrumbs-list"> <a class="breadcrumbs__item" href="#">Услуги</a><a class="breadcrumbs__item" href="#">Школа футбола</a></div>
+        </div>
+      </div>
       <section class="hero"> 
         <div class="container"> 
           <div class="hero-wrapper"> 
             <div class="hero-content">
               <div class="hero-info"> 
                 <div class="hero__subtitle">школа «Фабрики Футбола»</div>
-                <div class="hero__title">Школа футбола для детей в СПб
-                  <div class="hero__badge">Паркет</div>
+                <div class="hero__title">Школа футбола для детей в СПб</div>
+                <div class="hero__tags tags"> 
+                  <div class="tag">командные игры</div>
+                  <div class="tag">Идеальный день рождения</div>
+                  <div class="tag">Детям и взрослым</div>
                 </div>
                 <div class="hero-services"> 
                   <div class="hero-services__item"> <span>20x40 </span>метров</div>
@@ -87,7 +95,7 @@
           </div>
           <div class="faq-item">
             <div class="faq-item__title">Кому подходит?</div>
-            <div class="faq__text">В нашем спортивном комплексе работают профессиональные тренеры, которые составят план тренировок и учтут индивидуальные особенности каждого ребенка- так, дети помладше будут постигать азы футбола в игровой форме, а для детей постарше, акцент сделан на технику и мастерство. Для того чтобы тренировки проходили наиболее продуктивно и комфортно, численность одной группы составляет от 8 до 10 человек.</div>
+            <div class="faq-item__text">В нашем спортивном комплексе работают профессиональные тренеры, которые составят план тренировок и учтут индивидуальные особенности каждого ребенка- так, дети помладше будут постигать азы футбола в игровой форме, а для детей постарше, акцент сделан на технику и мастерство. Для того чтобы тренировки проходили наиболее продуктивно и комфортно, численность одной группы составляет от 8 до 10 человек.</div>
           </div>
           <div class="faq-item">
             <div class="faq-item__title">Как вступить в Школу и сколько это стоит?</div>
@@ -315,23 +323,20 @@
       <section class="price section"> 
         <div class="container">
           <div class="section-head"> 
-            <h2 class="section__title">Цены</h2>
+            <h2 class="section__title">Стоимость школы футбола</h2>
           </div>
           <div class="price-content"> 
             <div class="price-item"> 
-              <div class="price-item__amount">1 час</div>
+              <div class="price-item__amount">1 месяц</div>
               <div class="price-item__num">1 550 ₽</div>
-              <div class="price-item__btn btn">Арендовать</div>
             </div>
             <div class="price-item"> 
               <div class="price-item__amount">3 часа</div>
-              <div class="price-item__num">2 990 ₽<span class="price-item__num--old">5 990 ₽</span></div>
-              <div class="price-item__btn btn">Арендовать</div>
+              <div class="price-item__num">8 990 ₽<span class="price-item__num--old">10 990 ₽</span></div>
             </div>
             <div class="price-item"> 
               <div class="price-item__title">Особые условия</div>
               <div class="price-item__text">для организаторов турниров и длительных мероприяти </div>
-              <div class="price-item__btn btn">Арендовать</div>
             </div>
           </div>
         </div>
@@ -442,6 +447,44 @@
         </div>
       </div>
     </footer>
+    <div class="scroll-top"> 
+          <svg width="20" height="20">
+            <use xlink:href="images/sprite.svg#arrow-black"></use>
+          </svg>
+    </div>
+    <div class="modal" data-modal="1">
+      <div class="modal-overlay"> </div>
+      <div class="modal-container"> 
+        <div class="modal__close"></div>
+        <div class="modal__title"> Заголовок модального окна</div>
+        <div class="modal__text">Любое сообщение модального окна. Хотите совершить действие на сайте, нажмите кнопку, мы позвоним!</div>
+        <div class="modal__btn btn">Отправить!</div>
+      </div>
+    </div>
+    <div class="modal" data-modal="2"> 
+      <div class="modal-overlay"> </div>
+      <div class="modal-container"> 
+        <div class="modal__close"></div>
+        <div class="modal__title"> Заголовок модального окна</div>
+        <div class="modal__subtitle">Заполните форму, и наш специалист <br> свяжется  с Вами:</div>
+        <form class="modal-form" action="#">
+          <div class="form-item">
+            <label class="form__label" for=""> </label>
+            <input class="form__input" type="text" placeholder="Имя">
+          </div>
+          <div class="form-item">
+            <label class="form__label" for=""> </label>
+            <input class="form__input" type="text" placeholder="Фамилия">
+          </div>
+          <div class="form-item">
+            <label class="form__label" for=""> </label>
+            <input class="form__input" type="text" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form__btn btn">Отправить!</div>
+          <div class="form__text">Нажимая кнопку «Отправить!», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a href="#">Согласии на обработку персональных данных* </a></div>
+        </form>
+      </div>
+    </div>
     <script src="scripts/swiper-bundle.min.js"> </script>
     <script src="scripts/select2.js"> </script>
     <script src="scripts/imask.js"> </script>

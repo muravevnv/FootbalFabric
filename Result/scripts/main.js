@@ -164,11 +164,9 @@ const articleSlider = new Swiper(".js-article-slider", {
   spaceBetween: 24,
   pagination: {
     el: ".swiper-pagination",
+    type: "progressbar",
   },
-  navigation: {
-    prevEl: ".slider-prev",
-    nextEl: ".slider-next",
-  },
+
   breakpoints: {
     0: {
       slidesPerView: 1,
@@ -261,3 +259,69 @@ const advantagesSlider = new Swiper(".js-advantages-slider", {
     }
   }
 });
+
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault()
+    
+    const blockID = anchor.getAttribute('href').substr(1)
+    
+    document.getElementById(blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    })
+  })
+}
+
+
+let scrollBtn = document.querySelector('.scroll-top');
+
+document.addEventListener('scroll', function(){
+  if(window.pageYOffset > 1500) {
+    scrollBtn.classList.add('is-visible')
+  } else {
+    scrollBtn.classList.remove('is-visible');
+  }
+})
+
+scrollBtn.addEventListener('click', function(){
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+})
+
+var modalButtons = document.querySelectorAll(".js-open-modal"),
+  overlay = document.querySelectorAll(".modal-overlay"),
+  closeButtons = document.querySelectorAll(".modal__close");
+
+
+modalButtons.forEach(function (item) {
+  
+  item.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    var modalId = this.getAttribute("data-modal"),
+      modalElem = document.querySelector(
+        '.modal[data-modal="' + modalId + '"]'
+      );
+
+    modalElem.classList.add("is-open");
+  }); 
+}); 
+
+closeButtons.forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    var parentModal = this.closest(".modal");
+    parentModal.classList.remove("is-open");
+
+  });
+}); 
+
+overlay.forEach(function (item) {
+  item.addEventListener("click", function (e) {
+    var parentModal = this.closest(".modal");
+    parentModal.classList.remove("is-open");
+
+  });
+}); 

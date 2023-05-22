@@ -32,10 +32,10 @@ html(lang="en")
                 .form__btn.btn Отправить!
                 .form__aproove Нажимая на кнопку «Отправить!», вы даёте согласие на обработку <span>персональных данных</span> и соглашаетесь с <a href="#">Политикой конфиденциальности</a>
             .contacts-right 
-              .contacts-item
+              a(href="tel:+7(812)322-6-555").contacts-item
                   +svgSprite('phone', 24, 24)
                   span +7 (812) 322-6-555
-              .contacts-item
+              a(href="mailto:info@ff.ru.net").contacts-item
                 +svgSprite('mail', 24, 24)
                 span info@ff.ru.net
               .contacts-item.contacts-item--adress

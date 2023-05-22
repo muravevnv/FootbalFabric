@@ -21,8 +21,14 @@
     line-height: 1.38;
 
     @include media(sm) {
-      padding: 16px 0;
+      padding: 24px 0;
       font-size: 16px;
+    }
+
+    @include media(xs) {
+      flex-direction: column;
+      align-items: center;
+
     }
 
     &--adress {
@@ -34,9 +40,16 @@
       flex-shrink: 0;
       margin-right: 24px;
 
+      fill: var(--color-primary);
+
       @include media(sm) {
         width: 20px;
         height: 20px;
+      }
+
+      @include media(xs) {
+        margin-right: 0;
+        margin-bottom: 24px;
       }
     }
 
@@ -50,13 +63,14 @@
     border-radius: 48px;
 
     @include media(sm) {
-      flex-direction: column-reverse;
+      flex-direction: column;
       align-items: flex-start;
     }
 
     @include media(xs) {
       border-radius: 24px;
       padding: 24px 12px;
+      
     }
 
   }
@@ -67,10 +81,26 @@
     &__desc {
       max-width: 400px;
       margin-bottom: 24px;
+
+      @include media(sm)  {
+        text-align: center;
+        margin: 0 auto 24px;
+      }
     }
     
     .form__btn {
       margin: 16px 0 0 0;
+
+      @include media(sm)  {
+        margin: 16px auto 0;
+      }
+    }
+
+    .form__aproove {
+      @include media(sm) {
+        text-align: center;
+        margin: 16px auto 0;
+      }
     }
 
     @include media(xs)  {
@@ -99,6 +129,8 @@
       margin-right: 0;
       padding-right: 0;
       border-right: none;
+      border-bottom: 1px solid #E9EAEC;
+      padding-bottom: 34px;
      }
   }
 
@@ -112,11 +144,17 @@
 
      @include media(sm) {
       max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 34px 20px 0;
      }
 
      @include media(xs)  {
       padding: 0 12px;
-      margin-bottom: 24px;
      }
   }
 

@@ -55,6 +55,12 @@
 
 .stock {
 
+  padding-top: 36px;
+
+  @include media(xs) {
+    padding-top: 24px;
+  }
+
   &-wrapper {
     max-width: 965px;
     padding: 36px 48px 48px;
@@ -92,6 +98,9 @@
 
   &__text {
     margin-bottom: 24px;
+    font-family: 'Manrope';
+    font-size: 15px;
+    line-height: 25px;
 
     @include media(sm) {
       margin-bottom: 16px;

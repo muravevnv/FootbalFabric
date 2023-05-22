@@ -48,6 +48,11 @@
       </div>
     </header>
     <main> 
+      <div class="breadcrumbs"> 
+        <div class="container"> 
+          <div class="breadcrumbs-list"> <a class="breadcrumbs__item" href="#">Услуги</a><a class="breadcrumbs__item" href="#">Бампербол</a></div>
+        </div>
+      </div>
       <section class="hero"> 
         <div class="container"> 
           <div class="hero-wrapper"> 
@@ -55,7 +60,11 @@
               <div class="hero-info"> 
                 <div class="hero__subtitle">Бампербол</div>
                 <div class="hero__title">Футбол в шарах в Санкт-Петербурге </div>
-                <div class="hero__text">Аренда поля для игры во флорбол в СПб</div>
+                <div class="hero__tags tags"> 
+                  <div class="tag">Командные игры</div>
+                  <div class="tag">Идеальный день рождения</div>
+                  <div class="tag">Детям и взрослым</div>
+                </div>
                 <div class="hero-services"> 
                   <div class="hero-services__item"> <span>3-15</span>человек</div>
                   <div class="hero-services__item"> <span>от 1</span>часа</div>
@@ -316,6 +325,44 @@
         </div>
       </div>
     </footer>
+    <div class="scroll-top"> 
+          <svg width="20" height="20">
+            <use xlink:href="images/sprite.svg#arrow-black"></use>
+          </svg>
+    </div>
+    <div class="modal" data-modal="1">
+      <div class="modal-overlay"> </div>
+      <div class="modal-container"> 
+        <div class="modal__close"></div>
+        <div class="modal__title"> Заголовок модального окна</div>
+        <div class="modal__text">Любое сообщение модального окна. Хотите совершить действие на сайте, нажмите кнопку, мы позвоним!</div>
+        <div class="modal__btn btn">Отправить!</div>
+      </div>
+    </div>
+    <div class="modal" data-modal="2"> 
+      <div class="modal-overlay"> </div>
+      <div class="modal-container"> 
+        <div class="modal__close"></div>
+        <div class="modal__title"> Заголовок модального окна</div>
+        <div class="modal__subtitle">Заполните форму, и наш специалист <br> свяжется  с Вами:</div>
+        <form class="modal-form" action="#">
+          <div class="form-item">
+            <label class="form__label" for=""> </label>
+            <input class="form__input" type="text" placeholder="Имя">
+          </div>
+          <div class="form-item">
+            <label class="form__label" for=""> </label>
+            <input class="form__input" type="text" placeholder="Фамилия">
+          </div>
+          <div class="form-item">
+            <label class="form__label" for=""> </label>
+            <input class="form__input" type="text" placeholder="+7 (___) ___-__-__">
+          </div>
+          <div class="form__btn btn">Отправить!</div>
+          <div class="form__text">Нажимая кнопку «Отправить!», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в <a href="#">Согласии на обработку персональных данных* </a></div>
+        </form>
+      </div>
+    </div>
     <script src="scripts/swiper-bundle.min.js"> </script>
     <script src="scripts/select2.js"> </script>
     <script src="scripts/imask.js"> </script>
