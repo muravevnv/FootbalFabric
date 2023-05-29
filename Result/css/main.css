@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 :root {
   --font-family: "Play", sans-serif;
   --font-second: "Manrope", sans-serif;
@@ -25,20 +26,6 @@
   --z-index-modal: 1000;
 }
 
-@font-face {
-  font-family: "Play";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: local("Play"), url("../fonts/Play.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Play";
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-  src: local("Play-Bold"), url("../fonts/Play-Bold.ttf") format("truetype");
-}
 @font-face {
   font-family: "Manrope";
   src: url("../fonts/Manrope-Regular.ttf") format("truetype");
@@ -3833,7 +3820,7 @@ h5 {
   font-size: 10px;
   line-height: 14px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1400px){
   .header {
     border-radius: 0 0 24px 24px;
   }
@@ -3841,7 +3828,7 @@ h5 {
     margin-right: 16px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 1200px){
   .rent__title {
     margin-bottom: 48px;
   }
@@ -4000,7 +3987,7 @@ h5 {
     height: 303px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 992px){
   h1 {
     font-size: 32px;
   }
@@ -4153,12 +4140,12 @@ h5 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 800px){
   .special-items {
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px){
   .advantages-list .swiper-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4195,7 +4182,7 @@ h5 {
     -webkit-line-clamp: initial;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px){
   .container {
     padding: 0 15px;
   }
@@ -4848,13 +4835,13 @@ h5 {
     border-radius: 24px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 640px){
   .modal-container {
     width: calc(100% - 30px);
     padding: 40px 24px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 576px){
   .btn {
     border-radius: 24px;
   }
